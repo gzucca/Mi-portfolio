@@ -17,12 +17,11 @@ export default function Home() {
 
         <div className="w-full md:w-1/2 px-4 mb-8">
           <div className="bg-white dark:bg-gray-400 rounded shadow-lg p-6">
-            <h2 className="text-xl font-bold mb-4">Project 1</h2>
+            <h2 className="text-xl font-bold mb-4">API Food</h2>
             <p className="text-gray-700 dark:text-white mb-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor velit ut ipsum efficitur,
-              sit amet elementum nibh fringilla. Aliquam a elit ac nunc ultricies viverra.
+              Primer proyecto individual de Soy Henry, consiste en una página que utiliza la API de Spoonacular, con integración de una base de datos creada con PostgreSQL.
             </p>
-            <a href="#" className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+            <a href="https://api-food-frontend-production.up.railway.app/" className="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
               View project
             </a>
           </div>

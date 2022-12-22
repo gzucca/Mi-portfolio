@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 
 
 
@@ -14,10 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-blue-500 min-h-screen '>
+      <body className='bg-blue-500 scroll-smooth'>
           <Navbar />
           {children}
-          <Footer />
       </body>
     </html>
   );

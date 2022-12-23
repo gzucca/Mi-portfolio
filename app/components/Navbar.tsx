@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
 
     return (
 
-        <div className="sticky self-start top-0 left-0 z-50 bg-white dark:bg-black px-2  shadow-lg">
+        <div className="fixed self-start w-screen top-0 z-50 bg-white dark:bg-black px-2  shadow-lg">
 
             <nav className='py-3'>
 
@@ -50,11 +50,15 @@ const Navbar: React.FC = () => {
 
                         <div className='flex justify-between items-center'>
                             <li>
-                                <BsLinkedin className='text-black dark:text-white cursor-pointer text-2xl' />
+                                <a href='https://www.linkedin.com/in/gonzalo-zucca-51557b7a/?locale=en_US'>
+                                    <BsLinkedin className='text-black dark:text-white cursor-pointer text-3xl' />
+                                </a>
                             </li>
 
                             <li>
-                                <BsGithub className='text-black dark:text-white cursor-pointer text-2xl ml-4' />
+                                <a href='https://github.com/gzucca'>
+                                    <BsGithub className='text-black dark:text-white cursor-pointer text-3xl ml-4' />
+                                </a>
                             </li>
                         </div>
 
@@ -65,7 +69,7 @@ const Navbar: React.FC = () => {
                             </li>
 
                             <li>
-                                <a className='bg-gradient-to-r  from-cyan-800  to-cyan-700 text-white px-4 py-2 rounded ml-8' href="*">Resume</a>
+                                <a className='bg-gradient-to-r  from-cyan-800  to-cyan-700 text-white px-4 py-2 rounded ml-8' href="https://drive.google.com/file/d/1-fhk7zG2vgKCf3FA3_1n7dIWjLtUkSys/view?usp=sharing">Resume</a>
                             </li>
                         </div>
 

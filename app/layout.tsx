@@ -13,9 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" >
-      <body className='bg-blue-500 overflow-hidden h-screen'>
+      <body className='bg-blue-500  h-screen'>
           <Navbar />
           {children}
+
       </body>
     </html>
   );

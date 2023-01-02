@@ -13,12 +13,14 @@ import nodeJS from '../public/nodeJS.png'
 import react from '../public/react.png'
 import redux from '../public/redux.png'
 import tailwind from '../public/tailwind.png'
+import CarouselComp from './components/Carousel';
+
 
 
 export default function Home() {
   return (
 
-    <div className=" bg-white dark:bg-slate-800 w-full h-screen overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-orange-600 scroll-smooth snap-y snap-mandatory ">
+    <div className=" bg-white dark:bg-slate-800 w-full h-screen overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-orange-600 md:scroll-smooth snap-y snap-mandatory ">
 
       <section className=' bg-violet-900 flex flex-col justify-center items-center h-screen w-full snap-center'>
         <nav className='flex flex-col justify-center items-center'>
@@ -27,6 +29,7 @@ export default function Home() {
           <a href="#myTools" className="text-gray-700 dark:text-white mr-4 text-lg">My Tools</a>
           <a href="#contactMe" className="text-gray-700 dark:text-white mr-4 text-lg">Contact Me</a>
         </nav>
+
       </section>
 
 
@@ -48,13 +51,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id='myProjects' className=' bg-red-800 flex flex-col justify-center items-center h-screen w-fit snap-center '>
+      <section id='myProjects' className=' bg-red-800 h-screen pt-6 snap-center '>
+
+  
+          <CarouselComp></CarouselComp>
 
 
-          <div className="flex h-full items-start mt-16 gap-4 overflow-x-auto mx-auto">
-
-
-            <div className="md:w-[64rem] h-5/6 max-md:w-screen snap-center ">
+          {/* <div className="md:w-[64rem] h-5/6 max-md:w-screen snap-center ">
               <div className="bg-white dark:bg-gray-400 h-full rounded shadow-lg p-6">
                 <h2 className="text-xl font-bold mb-4">API Food</h2>
                 <p className="text-gray-700 dark:text-white mb-4 max-md:text-sm">
@@ -76,9 +79,9 @@ export default function Home() {
                   View project
                 </a>
               </div>
-            </div>
+            </div> */}
 
-          </div>
+
 
       </section>
 
@@ -135,45 +138,36 @@ export default function Home() {
 
       <section id='contactMe' className=' bg-teal-800 flex flex-col justify-center items-center h-screen w-full snap-center'>
 
-        <div className='flex flex-col justify-center items-center max-md:pb-32 md:h-screen lg:w-6/12 md:w-9/12 sm:w-full  mx-auto'>
+        <div className='flex flex-col justify-center items-center md:h-screen lg:w-6/12 md:w-10/12 sm:w-full mx-auto'>
 
-
-
-          <div className='mb-8'>
+          <div className='m-8 mx-auto w-full text-center'>
             <h2 className="text-gray-700 dark:text-white text-6xl max-sm:text-5xl">Contact Me!</h2>
           </div>
-          <div className='flex flex-row items-center justify-end lg:mr-32 md:mr-16 mb-4 w-8/12'>
+          <div className='w-full flex flex-row items-center justify-end lg:mr-32 md:mr-16 mb-4'>
             <label className="text-gray-700 dark:text-white pr-4 text-2xl max-sm:text-xl">Name: </label>
-            <input className=' w-9/12 bg-slate-200 rounded shadow-lg' />
+            <input className=' w-8/12 bg-slate-200 rounded shadow-lg' />
           </div>
-          <div className='flex flex-row items-center justify-end lg:mr-32 md:mr-16 w-8/12'>
+          <div className='w-full flex flex-row items-center justify-end lg:mr-32 md:mr-16'>
             <label className="text-gray-700 dark:text-white pr-4 text-2xl max-sm:text-xl">Email: </label>
-            <input className=' w-9/12  bg-slate-200 rounded shadow-lg' />
+            <input className=' w-8/12  bg-slate-200 rounded shadow-lg' />
           </div>
-          <div className='flex flex-row items-center mt-8 w-full'>
-            <textarea className=" h-24 w-9/12 resize-none mx-auto  bg-slate-200 rounded shadow-lg"></textarea>
+          <div className='w-full flex flex-row items-center mt-8'>
+            <textarea className=" h-24 w-full resize-none bg-slate-200 rounded shadow-lg"></textarea>
           </div>
-          <ul className='mt-8 w-6/12'>
 
-            <div className='flex justify-between items-center'>
-              <li>
-                <a href='https://www.linkedin.com/in/gonzalo-zucca-51557b7a/?locale=en_US'>
-                  <BsLinkedin className='text-black dark:text-white cursor-pointer text-5xl' />
-                </a>
-              </li>
+          <div className='mt-8 w-full flex flex-row justify-around'>
+            <a href='https://www.linkedin.com/in/gonzalo-zucca-51557b7a/?locale=en_US'>
+              <BsLinkedin className='text-black dark:text-white cursor-pointer text-5xl' />
+            </a>
 
-              <li>
-                <a href='https://github.com/gzucca'>
-                  <BsGithub className='text-black dark:text-white cursor-pointer text-5xl' />
-                </a>
-              </li>
-              <li>
-                <a href='mailto:gonzalo.zucca@gmail.com' >
-                  <AiOutlineMail className='text-black dark:text-white cursor-pointer text-5xl' />
-                </a>
-              </li>
-            </div>
-          </ul>
+            <a href='https://github.com/gzucca'>
+              <BsGithub className='text-black dark:text-white cursor-pointer text-5xl' />
+            </a>
+
+            <a href='mailto:gonzalo.zucca@gmail.com' >
+              <AiOutlineMail className='text-black dark:text-white cursor-pointer text-5xl' />
+            </a>
+          </div>
 
         </div>
       </section>

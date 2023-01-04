@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
 
                         <div className='flex justify-between items-center'>
                             <li>
-                                <a href='https://www.linkedin.com/in/gonzalo-zucca-51557b7a/?locale=en_US'>
+                                <a href='https://www.linkedin.com/in/gonzalo-zucca-dev/'>
                                     <BsLinkedin className='text-black dark:text-white cursor-pointer text-3xl' />
                                 </a>
                             </li>
@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
                             </li>
 
                             <li>
-                                <a className='bg-gradient-to-r  from-cyan-800  to-cyan-700 text-white px-4 py-2 rounded ml-8' href="https://drive.google.com/file/d/1-fhk7zG2vgKCf3FA3_1n7dIWjLtUkSys/view?usp=sharing">Resume</a>
+                                <a className='bg-gradient-to-r  from-cyan-800  to-cyan-700 text-white px-4 py-2 rounded ml-8' href="https://drive.google.com/file/d/1-je9TGhsldLceSW3588D4Y1Mz1--qM0v/view?usp=sharing">Resume</a>
                             </li>
                         </div>
 

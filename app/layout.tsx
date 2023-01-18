@@ -1,8 +1,6 @@
 import '../styles/globals.css'
 import Navbar from './components/Navbar';
-
-
-
+import Providers from './Providers';
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -12,10 +10,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" >
-      <body className='bg-blue-500  h-screen'>
+    <html >
+      <head />
+      <body>
+        <Providers>
           <Navbar />
           {children}
+        </Providers>
 
       </body>
     </html>

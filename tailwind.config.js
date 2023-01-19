@@ -8,7 +8,13 @@ module.exports = {
     "./node_modules/flowbite-react/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: 
+    {
+      fontFamily: {
+        'explora': "var(--explora-font)",
+        'comfortaa': "var(--comfortaa-font)",
+      },
+    },
   },
   plugins: [
     require('tailwind-scrollbar')({ nocompatible: true }),

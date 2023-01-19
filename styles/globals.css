@@ -3,16 +3,14 @@
 @tailwind utilities;
 
 
-.Typewriter__wrapper,
+
 .Typewriter__cursor {
   font-size: 50px;
   font-weight: 600;
-  font-family: 'Comfortaa Medium', cursive;;
-
+  /* font-family: 'Comfortaa Medium', cursive;; */
   color: black;
 }
 
-html.dark .Typewriter__wrapper,
 html.dark .Typewriter__cursor {
   color: white;
   color: rgb(rgb(147, 62, 62), green, blue)

@@ -20,7 +20,6 @@ import { Fade } from "react-awesome-reveal";
 import GraphemeSplitter from "grapheme-splitter";
 
 
-
 export default function Page() {
 
   const stringSplitter = (value: any) => {
@@ -28,18 +27,20 @@ export default function Page() {
     return splitter.splitGraphemes(value);
   };
 
+
   return (
 
     <div className=" bg-white dark:bg-slate-800 w-full h-screen overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-slate-300 dark:scrollbar-track-blue-900 md:scroll-smooth snap-y snap-mandatory ">
 
       <section className='flex flex-row justify-around items-center h-screen w-full snap-center'>
 
-        <div className='flex flex-row justify-center items-center gap-4 w-full'>
+        <div className='flex flex-row max-md:flex-col justify-center items-center md:gap-4 w-full'>
 
-          <div className='w-6/12 overflow-hidden flex flex-col gap-8 justify-center items-center'>
+          <div className='w-6/12 max-md:w-full overflow-hidden flex flex-col md:gap-8 justify-center items-center'>
             <Typewriter
               options={{
                 delay: 75,
+                wrapperClassName: 'max-md:text-4xl text-5xl font-comfortaa',
                 stringSplitter,
               }}
               onInit={(typewriter) => {
@@ -47,27 +48,27 @@ export default function Page() {
                   .start();
               }}
             />
-            <Fade direction='left' triggerOnce={true} className='my-4 w-full relative 2xl:left-[14rem] md:left-[12rem] max-md:w-40 max-md:h-40'>
+            <Fade direction='left' triggerOnce={true} className='my-4 w-full relative 2xl:left-[14rem] md:left-[12rem] max-md:w-full'>
               <nav className=' flex flex-col text-4xl justify-center items-center text-end  text-slate-400 dark:text-slate-500 '>
-                <div className='relative right-[42rem] hover:right-[40rem] w-[64rem] hover:ease-in duration-200'>
+                <div className='md:relative md:right-[42rem] md:hover:right-[40rem] md:w-[64rem] hover:ease-in duration-200'>
                   <div className='border-b-2 hover:text-black dark:hover:text-white '>
                     <a href="#aboutMe">About Me</a>
                   </div>
                   <div className='border-r-2 h-8 text-gray-700 dark:text-white'></div>
                 </div>
-                <div className='relative right-[39rem] hover:right-[37rem] w-[64rem] hover:ease-in duration-200 '>
+                <div className='md:relative md:right-[39rem] md:hover:right-[37rem] md:w-[64rem] hover:ease-in duration-200 '>
                   <div className='border-b-2 hover:text-black dark:hover:text-white'>
                     <a href="#myProjects">My Projects</a>
                   </div>
                   <div className='border-r-2 h-8 '></div>
                 </div>
-                <div className='relative right-[36rem] hover:right-[34rem] w-[64rem] hover:ease-in duration-200   '>
+                <div className='md:relative md:right-[36rem] md:hover:right-[34rem] md:w-[64rem] hover:ease-in duration-200   '>
                   <div className='border-b-2 hover:text-black dark:hover:text-white'>
                     <a href="#myTools">My Tools</a>
                   </div>
                   <div className='border-r-2 h-8 '></div>
                 </div>
-                <div className='relative right-[33rem] hover:right-[31rem] w-[64rem] hover:ease-in duration-200  '>
+                <div className='md:relative md:right-[33rem] md:hover:right-[31rem] md:w-[64rem] hover:ease-in duration-200  '>
                   <div className='border-b-2 hover:text-black dark:hover:text-white'>
                     <a href="#contactMe">Contact Me</a>
                   </div>
@@ -77,7 +78,7 @@ export default function Page() {
             </Fade>
           </div>
 
-          <Fade direction='right' triggerOnce={true} className='rounded-full w-6/12 h-6/12 my-4 max-md:w-40 max-md:h-40 overflow-hidden'>
+          <Fade direction='right' triggerOnce={true} className='rounded-full w-6/12 h-6/12 my-4 max-md:w-7/12 max-md:h-7/12 overflow-hidden'>
             <div>
               <Image priority src={programming} alt='photo' className='object-cover' />
             </div>

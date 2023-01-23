@@ -6,7 +6,7 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { AiOutlineMail } from 'react-icons/ai';
 import css from '../public/css.png'
 import express from '../public/express.png'
-import gitBash from '../public/gitBash.png'
+import git from '../public/git.png'
 import html from '../public/html.png'
 import javascriptLogo from '../public/javascriptLogo.png'
 import next from '../public/next.png'
@@ -70,7 +70,7 @@ export default function Page() {
                 </div>
                 <div className='md:relative md:right-[33rem] md:hover:right-[31rem] md:w-[64rem] hover:ease-in duration-200  '>
                   <div className='border-b-2 hover:text-black dark:hover:text-white'>
-                    <a href="#contactMe">Contact Me</a>
+                    <a href="#contactMe">Get In Touch</a>
                   </div>
                   <div className='border-r-2 h-8 '></div>
                 </div>
@@ -96,11 +96,11 @@ export default function Page() {
           <h2 className="text-2xl max-md:text-lg text-center text-black dark:text-gray-200 ">Full-Stack Developer</h2>
 
           <div className='flex flex-row flex-wrap lg:mx-32 2xl:mx-96'>
-            <div className='relative rounded-full w-80 h-80 my-4 max-md:w-40 max-md:h-40 overflow-hidden mx-auto'>
-              <Image priority src={photo} alt='photo' className='object-cover' />
+            <div className='relative rounded-full w-80 h-80 my-4 max-md:w-40 max-md:h-40 overflow-hidden mx-auto shadow-lg dark:shadow-slate-600'>
+              <Image priority src={photo} alt='photo' className='object-cover ' />
             </div>
             <div className='md:w-6/12'>
-              <p className="text-gray-700 dark:text-white my-4 tracking-wide text-justify leading-7 max-md:text-sm 2xl:text-lg"> Hi there! I'm Gonzalo. I've a bachelor's degree in marketing the English Language, but I've recently found my true passion in programming and decided to become a Full-Stack Web Developer. <br></br>  <br></br> Since then, I have successfully graduated from "Soy Henry" Coding Bootcamp, where I've learned the basics of web programming with Javascript and some of its most widely utilized frameworks and libraries: tools such as React, Redux, Node JS, and Express and many more that I've used in different projects. And I'm excited to say that this is only the beginning of my career in this ever-growing profession which is web programming. </p>
+              <p className="text-gray-700 dark:text-white my-4 tracking-wide text-justify leading-7 max-md:text-sm 2xl:text-lg"> Hi there! I'm Gonzalo. I have a bachelor's degree in Marketing and the English Language, but I've recently found my true passion in programming and decided to become a Full-Stack Web Developer. <br></br>  <br></br> Since then, I have successfully graduated from "Soy Henry" Coding Bootcamp, where I've learned the basics of web programming with Javascript and some of its most widely utilized frameworks and libraries: tools such as React, Redux, Node JS, and Express and many more that I've used in different projects. And I'm excited to say that this is only the beginning of my career in this ever-growing profession which is web programming. </p>
             </div>
           </div>
 
@@ -144,47 +144,59 @@ export default function Page() {
 
       <section id='myTools' className='flex flex-col justify-center items-center h-screen w-full snap-center'>
         <div className='mx-auto'>
-          <h1 className=" font-roboto text-5xl text-center py-2 text-blue-900 dark:text-blue-300">My tools</h1>
-          <ul className='flex flex-wrap gap-4 justify-center mt-4 md:mx-32 lg:mx-64 max-md:mx-16'>
-            <li className=' bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={html} alt='html' width={70} height={70} className=' self-center justify-self-center' ></Image>
+          <h1 className=" font-roboto text-5xl text-center my-12 text-gray-800 dark:text-blue-300">My tools</h1>
+          <ul className='flex flex-wrap gap-4 justify-center mt-4 md:mx-32 lg:mx-96 max-md:mx-16'>
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={html} alt='html' width={70} height={70} className='z-50 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center  text-gray-700 dark:text-white'>HTML5</p>
             </li>
 
-            <li className='bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={css} alt='css' width={70} height={70} className=' self-center justify-self-center' ></Image>
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={css} alt='html' width={70} height={70} className='z-50 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>CSS</p>
             </li>
 
-            <li className='bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={javascriptLogo} alt='javascript' width={60} height={60} className='h-auto w-auto self-center justify-self-center' ></Image>
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={javascriptLogo} alt='html' width={48} height={48} className='z-50 pt-4 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto w-auto ' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center  text-gray-700 dark:text-white'>Javascript</p>
             </li>
 
-            <li className='bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={gitBash} alt='gitbash' width={60} height={60} className='h-auto w-auto self-center justify-self-center' ></Image>
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={git} alt='html' width={60} height={60} className='z-50 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Git</p>
             </li>
 
-            <li className='bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={nodeJS} alt='nodeJS' width={60} height={60} className='h-auto w-auto self-center justify-self-center' ></Image>
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={nodeJS} alt='html' width={60} height={60} className='z-50 pt-[1rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Node JS</p>
             </li>
 
-            <li className='bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={react} alt='react' width={60} height={60} className='h-auto w-auto self-center justify-self-center' ></Image>
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={react} alt='html' width={60} height={60} className='z-50 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>React JS</p>
             </li>
 
-            <li className='bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={redux} alt='redux' width={60} height={60} className='h-auto w-auto self-center justify-self-center' ></Image>
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={redux} alt='html' width={60} height={60} className='z-50 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Redux</p>
             </li>
 
-            <li className='bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={express} alt='express' width={60} height={60} className='h-auto w-auto self-center justify-self-center' ></Image>
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={express} alt='html' width={62} height={62} className='z-50 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Express</p>
             </li>
 
-            <li className='bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={tailwind} alt='tailwind' width={60} height={60} className='h-auto w-auto self-center justify-self-center' ></Image>
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={tailwind} alt='html' width={62} height={62} className='z-50 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Tailwind</p>
             </li>
 
-            <li className='bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={next} alt='next' width={60} height={60} className='h-auto w-auto self-center justify-self-center' ></Image>
+            
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={next} alt='html' width={60} height={60} className='z-50 pt-[0.6rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Next.js</p>
             </li>
+
 
           </ul>
 
@@ -194,34 +206,27 @@ export default function Page() {
 
       <section id='contactMe' className='   flex flex-col justify-center items-center h-screen w-full snap-center'>
 
-        <div className='flex flex-col justify-center items-center md:h-screen lg:w-6/12 md:w-10/12 sm:w-full mx-auto'>
+        <div className='flex flex-col justify-center items-center md:h-screen lg:w-8/12 md:w-10/12 sm:w-full mx-auto'>
 
           <div className='m-8 mx-auto w-full text-center'>
             <h2 className="text-gray-700 dark:text-white text-6xl max-sm:text-5xl">Contact Me!</h2>
           </div>
-          <div className='w-full flex flex-row items-center justify-end lg:mr-32 md:mr-16 mb-4'>
-            <label className="text-gray-700 dark:text-white pr-4 text-2xl max-sm:text-xl">Name: </label>
-            <input className=' w-8/12 bg-slate-200 rounded shadow-lg' />
-          </div>
-          <div className='w-full flex flex-row items-center justify-end lg:mr-32 md:mr-16'>
-            <label className="text-gray-700 dark:text-white pr-4 text-2xl max-sm:text-xl">Email: </label>
-            <input className=' w-8/12  bg-slate-200 rounded shadow-lg' />
-          </div>
-          <div className='w-full flex flex-row items-center mt-8'>
-            <textarea className=" h-24 w-full resize-none bg-slate-200 rounded shadow-lg"></textarea>
+
+          <div className=' py-8'>
+            <p className="text-gray-700 dark:text-white text-2xl max-sm:text-xl">I'm currently looking for full-time Frontend or Full-Stack opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at {<a href='mailto:gonzalo.zucca@gmail.com' target="_blank" className=' text-blue-600 hover:text-blue-800 hover:underline'>gonzalo.zucca@gmail.com</a>}.</p>
           </div>
 
           <div className='mt-8 w-full flex flex-row justify-around'>
-            <a href='https://www.linkedin.com/in/gonzalo-zucca-51557b7a/?locale=en_US'>
-              <BsLinkedin className='text-black dark:text-white cursor-pointer text-5xl' />
+            <a href='https://www.linkedin.com/in/gonzalo-zucca-51557b7a/?locale=en_US' target="_blank">
+              <BsLinkedin className='text-black hover:text-gray-700 hover:scale-125 transition ease-in-out delay-100 duration-200  dark:text-white dark:hover:text-slate-500 cursor-pointer text-5xl' />
             </a>
 
-            <a href='https://github.com/gzucca'>
-              <BsGithub className='text-black dark:text-white cursor-pointer text-5xl' />
+            <a href='https://github.com/gzucca' target="_blank" >
+              <BsGithub className='text-black hover:text-gray-700 hover:scale-125 transition ease-in-out delay-100 duration-200  dark:text-white dark:hover:text-slate-500 cursor-pointer text-5xl' />
             </a>
 
-            <a href='mailto:gonzalo.zucca@gmail.com' >
-              <AiOutlineMail className='text-black dark:text-white cursor-pointer text-5xl' />
+            <a href='mailto:gonzalo.zucca@gmail.com' target="_blank" >
+              <AiOutlineMail className='text-black hover:text-gray-700 hover:scale-125 transition ease-in-out delay-100 duration-200  dark:text-white dark:hover:text-slate-500 cursor-pointer text-5xl' />
             </a>
           </div>
 

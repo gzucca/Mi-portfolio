@@ -18,13 +18,13 @@ return (
 
                 <div className='flex justify-between items-center'>
                     <li>
-                        <a href='https://www.linkedin.com/in/gonzalo-zucca-dev/'>
+                        <a href='https://www.linkedin.com/in/gonzalo-zucca-dev/?locale=en_US' target="_blank">
                             <BsLinkedin className='text-black dark:text-white cursor-pointer text-3xl' />
                         </a>
                     </li>
 
                     <li>
-                        <a href='https://github.com/gzucca'>
+                        <a href='https://github.com/gzucca' target="_blank">
                             <BsGithub className='text-black dark:text-white cursor-pointer text-3xl ml-4' />
                         </a>
                     </li>
@@ -37,7 +37,7 @@ return (
                     </li>
 
                     <li>
-                        <a className='bg-gradient-to-r  from-cyan-800  to-cyan-700 text-white px-4 py-2 rounded ml-8' href="https://drive.google.com/file/d/1-je9TGhsldLceSW3588D4Y1Mz1--qM0v/view?usp=sharing">Resume</a>
+                        <a className='bg-gradient-to-r  from-cyan-800  to-cyan-700 text-white px-4 py-2 rounded ml-8' href="https://drive.google.com/file/d/1lqPM_Bl86Kb0fsAyYzNnHzHKOjQFbY3x/view?usp=sharing" target="_blank">Resume</a>
                     </li>
                 </div>
 

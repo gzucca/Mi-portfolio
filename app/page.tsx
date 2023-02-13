@@ -32,7 +32,7 @@ export default function Page() {
 
     <div className=" bg-white dark:bg-slate-800 w-full h-screen overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-slate-300 dark:scrollbar-track-blue-900 md:scroll-smooth snap-y snap-mandatory ">
 
-      <section className='flex flex-row justify-around items-center h-screen w-full snap-center'>
+      <section className='flex flex-row justify-around items-center h-screen w-full snap-center mt-3'>
 
         <div className='flex flex-row max-md:flex-col justify-center items-center md:gap-4 w-full'>
 
@@ -40,7 +40,7 @@ export default function Page() {
             <Typewriter
               options={{
                 delay: 75,
-                wrapperClassName: 'max-md:text-4xl text-5xl font-comfortaa',
+                wrapperClassName: 'max-md:text-4xl max-sm:text-2xl text-5xl font-comfortaa',
                 stringSplitter,
               }}
               onInit={(typewriter) => {
@@ -49,7 +49,7 @@ export default function Page() {
               }}
             />
             <Fade direction='left' triggerOnce={true} className='my-4 w-full relative 2xl:left-[14rem] md:left-[12rem] max-md:w-full'>
-              <nav className=' flex flex-col text-4xl justify-center items-center text-end  text-slate-400 dark:text-slate-500 '>
+              <nav className=' flex flex-col text-4xl max-sm:text-xl justify-center items-center text-end  text-slate-400 dark:text-slate-500 '>
                 <div className='md:relative md:right-[42rem] md:hover:right-[40rem] md:w-[64rem] hover:ease-in duration-200'>
                   <div className='border-b-2 hover:text-black dark:hover:text-white '>
                     <a href="#aboutMe">About Me</a>
@@ -100,7 +100,7 @@ export default function Page() {
               <Image priority src={photo} alt='photo' className='object-cover ' />
             </div>
             <div className='md:w-6/12'>
-              <p className="text-gray-700 dark:text-white my-4 tracking-wide text-justify leading-7 max-md:text-sm 2xl:text-lg"> Hi there! I'm Gonzalo. I have a bachelor's degree in Marketing and the English Language, but I've recently found my true passion in programming and decided to become a Full-Stack Web Developer. <br></br>  <br></br> Since then, I have successfully graduated from "Soy Henry" Coding Bootcamp, where I've learned the basics of web programming with Javascript and some of its most widely utilized frameworks and libraries: tools such as React, Redux, Node JS, and Express and many more that I've used in different projects. And I'm excited to say that this is only the beginning of my career in this ever-growing profession which is web programming. </p>
+              <p className="text-gray-700 dark:text-white my-4 text-justify max-sm:text-xs max-md:text-sm 2xl:text-lg"> Hi there! I'm Gonzalo. I have a bachelor's degree in Marketing and the English Language, but I've recently found my true passion in programming and decided to become a Full-Stack Web Developer. <br></br>  <br></br> Since then, I have successfully graduated from "Soy Henry" Coding Bootcamp, where I've learned the basics of web programming with Javascript and some of its most widely utilized frameworks and libraries: tools such as React, Redux, Node JS, and Express and many more that I've used in different projects. And I'm excited to say that this is only the beginning of my career in this ever-growing profession which is web programming. </p>
             </div>
           </div>
 
@@ -143,57 +143,57 @@ export default function Page() {
 
 
       <section id='myTools' className='flex flex-col justify-center items-center h-screen w-full snap-center'>
-        <div className='mx-auto'>
+        <div className='mx-auto max-sm:mx-2'>
           <h1 className=" font-roboto text-5xl text-center my-12 text-gray-800 dark:text-blue-300">My tools</h1>
-          <ul className='flex flex-wrap gap-4 justify-center mt-4 md:mx-32 lg:mx-96 max-md:mx-16'>
+          <ul className='flex flex-wrap gap-4 justify-center mt-4 '>
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={html} alt='html' width={70} height={70} className='z-50 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={html} alt='html' width={70} height={70} className='z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center  text-gray-700 dark:text-white'>HTML5</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={css} alt='html' width={70} height={70} className='z-50 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={css} alt='html' width={70} height={70} className='z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>CSS</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={javascriptLogo} alt='html' width={48} height={48} className='z-50 pt-4 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto w-auto ' ></Image>
+              <Image src={javascriptLogo} alt='html' width={48} height={48} className='z-10 pt-4 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto w-auto ' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center  text-gray-700 dark:text-white'>Javascript</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={git} alt='html' width={60} height={60} className='z-50 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={git} alt='html' width={60} height={60} className='z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Git</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={nodeJS} alt='html' width={60} height={60} className='z-50 pt-[1rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={nodeJS} alt='html' width={60} height={60} className='z-10 pt-[1rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Node JS</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={react} alt='html' width={60} height={60} className='z-50 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={react} alt='html' width={60} height={60} className='z-10 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>React JS</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={redux} alt='html' width={60} height={60} className='z-50 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={redux} alt='html' width={60} height={60} className='z-10 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Redux</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={express} alt='html' width={62} height={62} className='z-50 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={express} alt='html' width={62} height={62} className='z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Express</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={tailwind} alt='html' width={62} height={62} className='z-50 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={tailwind} alt='html' width={62} height={62} className='z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Tailwind</p>
             </li>
 
             
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={next} alt='html' width={60} height={60} className='z-50 pt-[0.6rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={next} alt='html' width={60} height={60} className='z-10 pt-[0.6rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Next.js</p>
             </li>
 
@@ -204,16 +204,16 @@ export default function Page() {
       </section>
 
 
-      <section id='contactMe' className='   flex flex-col justify-center items-center h-screen w-full snap-center'>
+      <section id='contactMe' className='   flex flex-col justify-center items-center h-screen w-full px-8 snap-center'>
 
         <div className='flex flex-col justify-center items-center md:h-screen lg:w-8/12 md:w-10/12 sm:w-full mx-auto'>
 
           <div className='m-8 mx-auto w-full text-center'>
-            <h2 className="text-gray-700 dark:text-white text-6xl max-sm:text-5xl">Contact Me!</h2>
+            <h2 className="text-gray-700 dark:text-white text-6xl max-sm:text-4xl">Contact Me!</h2>
           </div>
 
-          <div className=' py-8'>
-            <p className="text-gray-700 dark:text-white text-2xl max-sm:text-xl">I'm currently looking for full-time Frontend or Full-Stack opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at {<a href='mailto:gonzalo.zucca@gmail.com' target="_blank" className=' text-blue-600 hover:text-blue-800 hover:underline'>gonzalo.zucca@gmail.com</a>}.</p>
+          <div className='py-8'>
+            <p className="text-gray-700 dark:text-white text-2xl max-sm:text-lg">I'm currently looking for full-time Frontend or Full-Stack opportunities! If you know of any positions available, if you have any questions, or if you just want to say hi, please feel free to email me at {<a href='mailto:gonzalo.zucca@gmail.com' target="_blank" className=' text-blue-600 hover:text-blue-800 hover:underline'>gonzalo.zucca@gmail.com</a>}.</p>
           </div>
 
           <div className='mt-8 w-full flex flex-row justify-around'>

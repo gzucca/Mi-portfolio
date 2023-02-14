@@ -13,6 +13,7 @@ import next from '../public/next.png'
 import nodeJS from '../public/nodeJS.png'
 import react from '../public/react.png'
 import redux from '../public/redux.png'
+import angular from '../public/angular.png'
 import tailwind from '../public/tailwind.png'
 import CarouselComp from './components/Carousel';
 import Typewriter from 'typewriter-effect';
@@ -147,37 +148,37 @@ export default function Page() {
           <h1 className=" font-roboto text-5xl text-center my-12 text-gray-800 dark:text-blue-300">My tools</h1>
           <ul className='flex flex-wrap gap-4 justify-center mt-4 '>
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={html} alt='html' width={70} height={70} className='z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={html} alt='html' width={70} height={'auto'} className='z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center  text-gray-700 dark:text-white'>HTML5</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={css} alt='html' width={70} height={70} className='z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={css} alt='html' width={70} height={'auto'} className='z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>CSS</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={javascriptLogo} alt='html' width={48} height={48} className='z-10 pt-4 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto w-auto ' ></Image>
+              <Image src={javascriptLogo} alt='html' width={48} height={'auto'} className='z-10 pt-4 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto w-auto ' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center  text-gray-700 dark:text-white'>Javascript</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={git} alt='html' width={60} height={60} className='z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={git} alt='html' width={60} height={'auto'} className='z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Git</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={nodeJS} alt='html' width={60} height={60} className='z-10 pt-[1rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={nodeJS} alt='html' width={60} height={'auto'} className='z-10 pt-[1rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Node JS</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={react} alt='html' width={60} height={60} className='z-10 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={react} alt='html' width={60} height={'auto'} className='z-10 pt-[0.7rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto w-auto' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>React JS</p>
             </li>
 
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
-              <Image src={redux} alt='html' width={60} height={60} className='z-10 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <Image src={redux} alt='html' width={60} height={'auto'} className='z-10 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center ' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Redux</p>
             </li>
 
@@ -195,6 +196,11 @@ export default function Page() {
             <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
               <Image src={next} alt='html' width={60} height={60} className='z-10 pt-[0.6rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
               <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Next.js</p>
+            </li>
+
+            <li className=' transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20'>
+              <Image src={angular} alt='html' width={60} height={'auto'} className='z-10 pt-[0.6rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center' ></Image>
+              <p className='transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white'>Angular</p>
             </li>
 
 

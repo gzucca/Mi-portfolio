@@ -99,7 +99,7 @@ export default function Page() {
 
 			<section
 				id="aboutMe"
-				className="flex flex-col justify-center items-center h-[80vh] w-[80vw] my-auto mx-auto snap-center"
+				className="flex flex-col justify-center items-center mx-auto my-auto h-[85vh] w-[80vw] snap-center"
 			>
 				<div className="h-full w-full">
 					<h1 className="font-roboto text-4xl text-center py-2 text-blue-900 dark:text-blue-300">
@@ -109,16 +109,16 @@ export default function Page() {
 						Full-Stack Developer
 					</h2>
 
-					<div className="sm:flex justify-center items-center gap-8 w-full h-full">
-						<div className="rounded-full overflow-hidden shadow-lg sm:max-w-[40%] sm:max-h-[80%] dark:shadow-slate-600">
+					<div className="flex flex-col sm:flex-row gap-2 w-full h-[80%]">
+						<div className="rounded-full overflow-hidden mx-auto my-auto shadow-lg w-[75%] h-[35%] sm:w-[35%] sm:h-[65%] dark:shadow-slate-600">
 							<Image
 								priority
 								src={photo}
 								alt="photo"
-								className="object-cover "
+								style={{ height: "100%", objectFit: "cover"}}
 							/>
 						</div>
-						<div className="flex justify-center items-center sm:max-w-[40%] sm:max-h-[80%]">
+						<div className="flex  justify-center items-center mx-auto my-auto w-[100%] h-[40%] sm:w-[40%] sm:h-[80%]">
 							<p className="text-gray-700 dark:text-white text-justify text-xs">
 								{" "}
 								Hi there! I'm Gonzalo. I have a bachelor's degree in Marketing
@@ -168,13 +168,13 @@ export default function Page() {
 
 			<section
 				id="myTools"
-				className="flex flex-col justify-center items-center h-screen w-full snap-center"
+				className="mx-auto my-auto h-[85vh] w-[80vw] snap-center"
 			>
-				<div className="mx-auto max-sm:mx-2">
-					<h1 className=" font-roboto text-5xl text-center my-12 text-gray-800 dark:text-blue-300">
+				<div className="h-full w-full flex flex-col justify-center items-center align-middle">
+					<h1 className=" font-roboto text-3xl text-center text-gray-800 dark:text-blue-300">
 						My tools
 					</h1>
-					<ul className="flex flex-wrap gap-4 justify-center mt-4 ">
+					<ul className="flex flex-wrap gap-4 justify-center mt-4 sm:mt-16 ">
 						<li className=" transition ease-in-out delay-150 duration-300 group hover:scale-110  bg-slate-200 dark:bg-slate-600 grid rounded-full w-20 h-20">
 							<Image
 								src={html}

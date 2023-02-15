@@ -27,22 +27,15 @@ function CarouselComp() {
         indicators={false}
         leftControl="<"
         rightControl=">"
-        className="text-3xl font-bold dark:text-white text-black"
+        className="dark:text-white text-black text-2xl"
       >
-        <div className="font-normal md:w-[64rem] h-5/6 max-md:w-screen snap-center ">
+        <div className="max-w-[80%] h-5/6 max-md:w-screen snap-center">
           <div className="bg-white dark:bg-gray-400 h-full rounded shadow-lg dark:shadow-slate-600 p-6">
             <h2 className="text-xl dark:text-white text-black font-bold mb-4">
               API Food
             </h2>
-            <p className="text-gray-700 dark:text-white text-base mb-4 max-md:text-sm 2xl:text-lg">
-              First solo project at Soy Henry. It is a website that uses the
-              Spoonacular API, with integration of a database. The use of
-              frameworks and dependencies outside of the bootcamp syllabus was
-              limited by design. The Frontend is a React APP, which incorporates
-              Redux for the use of a global state, and pure CSS. The Backend is
-              a RESTful API created with Node JS and Express for managing
-              routes, and a database created with PostgreSQL. New recipes can be
-              added to the database from within the website.
+            <p className="h-fit text-base text-gray-700 dark:text-white mb-4">
+              First solo project at Soy Henry. It is a website that uses the Spoonacular API, with integration of a database. The use of frameworks and dependencies outside of the bootcamp syllabus was limited by design. The Frontend is a React APP, which incorporates Redux for the use of a global state, and pure CSS. The Backend is a RESTful API created with Node JS and Express for managing routes, and a database created with PostgreSQL. New recipes can be added to the database from within the website.
             </p>
             <a
               href="https://pi-api-food.up.railway.app/"
@@ -78,12 +71,12 @@ function CarouselComp() {
             </div>
           </div>
         </div>
-        <div className="md:w-[64rem] md:h-5/6 max-md:h-5/6 max-md:w-screen snap-center">
+        <div className="max-w-[80%] h-5/6 max-md:w-screen snap-center">
           <div className="font-normal bg-white dark:bg-gray-400 h-full rounded shadow-lg dark:shadow-slate-600 p-6">
-            <h2 className="text-xl dark:text-white text-black font-bold mb-4">
+            <h2 className="text-lg dark:text-white text-black font-bold mb-2 underline decoration-inherit">
               Scaneame
             </h2>
-            <p className="text-gray-700 dark:text-white text-base mb-4 max-md:text-sm 2xl:text-lg">
+            <p className="  h-fit text-base text-gray-700 dark:text-white ">
               First group project at "Soy Henry." It is an online store for a
               fictitious clothing line. The use of new frameworks and
               dependencies was encouraged, so the project includes an
@@ -99,18 +92,17 @@ function CarouselComp() {
             <a
               href="https://scaneame.vercel.app/"
               target="_blank"
-              className="inline-block text-xl bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+              className="inline-block text-base bg-blue-500 hover:bg-blue-700 text-white font-bold mx-2 my-2 py-2 px-4 rounded-full"
             >
               View project
             </a>
-            <div className="flex flex-wrap justify-center mt-6 max-sm:hidden">
+            <div className="flex flex-wrap max-h-[60%] min-h-[25%] justify-center overflow-y-scroll max-sm:hidden">
               {images.map((src, index) => (
                 <img
                   src={src}
                   onClick={() => openImageViewer(index)}
-                  width="200px"
                   key={index}
-                  style={{ margin: "2px", height: "100px", cursor: 'pointer' }}
+                  style={{ margin: "4px", width: "max(250px, 15vw)", height: "max(200px, 18vh)", cursor: 'pointer', }}
                   alt=""
                 />
               ))}

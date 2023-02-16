@@ -115,7 +115,7 @@ export default function Page() {
 								priority
 								src={photo}
 								alt="photo"
-								style={{ height: "100%", objectFit: "cover"}}
+								style={{ height: "100%", objectFit: "cover" }}
 							/>
 						</div>
 						<div className="flex  justify-center items-center mx-auto my-auto w-[100%] h-[40%] sm:w-[40%] sm:h-[80%]">
@@ -180,8 +180,7 @@ export default function Page() {
 								src={html}
 								alt="html"
 								width={70}
-								height={"auto"}
-								className="z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center"
+								className="z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center  text-gray-700 dark:text-white">
 								HTML5
@@ -193,8 +192,7 @@ export default function Page() {
 								src={css}
 								alt="html"
 								width={70}
-								height={"auto"}
-								className="z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center"
+								className="z-10 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white">
 								CSS
@@ -206,8 +204,7 @@ export default function Page() {
 								src={javascriptLogo}
 								alt="html"
 								width={48}
-								height={"auto"}
-								className="z-10 pt-4 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto w-auto "
+								className="z-10 pt-4 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center  text-gray-700 dark:text-white">
 								Javascript
@@ -219,8 +216,7 @@ export default function Page() {
 								src={git}
 								alt="html"
 								width={60}
-								height={"auto"}
-								className="z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center"
+								className="z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white">
 								Git
@@ -232,8 +228,7 @@ export default function Page() {
 								src={nodeJS}
 								alt="html"
 								width={60}
-								height={"auto"}
-								className="z-10 pt-[1rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center"
+								className="z-10 pt-[1rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white">
 								Node JS
@@ -245,8 +240,7 @@ export default function Page() {
 								src={react}
 								alt="html"
 								width={60}
-								height={"auto"}
-								className="z-10 pt-[0.7rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto w-auto"
+								className="z-10 pt-[0.7rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white">
 								React JS
@@ -258,8 +252,7 @@ export default function Page() {
 								src={redux}
 								alt="html"
 								width={60}
-								height={"auto"}
-								className="z-10 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center "
+								className="z-10 pt-3 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white">
 								Redux
@@ -271,10 +264,9 @@ export default function Page() {
 								src={express}
 								alt="html"
 								width={62}
-								height={62}
 								className="z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center"
 							></Image>
-							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white">
+							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white h-auto">
 								Express
 							</p>
 						</li>
@@ -284,8 +276,7 @@ export default function Page() {
 								src={tailwind}
 								alt="html"
 								width={62}
-								height={62}
-								className="z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center"
+								className="z-10 pt-2 transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white">
 								Tailwind
@@ -297,8 +288,7 @@ export default function Page() {
 								src={next}
 								alt="html"
 								width={60}
-								height={60}
-								className="z-10 pt-[0.6rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center"
+								className="z-10 pt-[0.6rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white">
 								Next.js
@@ -310,8 +300,7 @@ export default function Page() {
 								src={angular}
 								alt="html"
 								width={60}
-								height={"auto"}
-								className="z-10 pt-[0.6rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center"
+								className="z-10 pt-[0.6rem] transition ease-in-out delay-100 duration-300 group-hover:scale-125 self-center justify-self-center h-auto"
 							></Image>
 							<p className="transition scale-0 ease-in-out delay-150 duration-300 group-hover:translate-y-2  group-hover:scale-100 self-center  justify-self-center text-gray-700 dark:text-white">
 								Angular

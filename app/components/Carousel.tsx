@@ -2,6 +2,7 @@
 import { Carousel } from "flowbite-react";
 import React, { useState, useCallback } from "react";
 import ImageViewer from "react-simple-image-viewer";
+import { BsGithub } from 'react-icons/bs'
 
 function CarouselComp() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -27,22 +28,30 @@ function CarouselComp() {
         indicators={false}
         leftControl="<"
         rightControl=">"
-        className="dark:text-white text-black text-2xl"
+        className="text-2xl text-black dark:text-white"
       >
         <div className="max-w-[80%] h-5/6 max-md:w-screen overflow-y-hidden snap-center">
-          <div className="font-normal bg-white dark:bg-gray-400 h-full rounded shadow-lg dark:shadow-slate-600 p-6">
-            <h2 className="text-lg dark:text-white text-black font-bold mb-2 underline decoration-inherit">
+          <div className="h-full p-6 font-normal bg-white rounded shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+            <h2 className="mb-2 text-lg font-bold text-black underline dark:text-white decoration-inherit">
               API Food
             </h2>
-            <p className=" h-fit text-base text-gray-700 dark:text-white">
+            <p className="text-base text-gray-700 h-fit dark:text-white">
               First solo project at Soy Henry. It is a website that uses the Spoonacular API, with integration of a database. The use of frameworks and dependencies outside of the bootcamp syllabus was limited by design. The Frontend is a React APP, which incorporates Redux for the use of a global state, and pure CSS. The Backend is a RESTful API created with Node JS and Express for managing routes, and a database created with PostgreSQL. New recipes can be added to the database from within the website.
             </p>
             <a
               href="https://pi-api-food.up.railway.app/"
               target="_blank"
-              className="inline-block text-base bg-blue-500 hover:bg-blue-700 text-white font-bold mx-2 my-2 py-2 px-4 rounded-full"
+              className="inline-flex items-center self-center justify-center gap-2 px-3 py-2 mx-2 my-2 text-base font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
             >
               View project
+            </a>
+            <a
+              href="https://github.com/gzucca/PI-API-Food"
+              target="_blank"
+              className="inline-flex items-center self-center justify-center gap-2 px-3 py-2 mx-2 my-2 text-base font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
+            >
+              <BsGithub className='text-xs text-black cursor-pointer dark:text-white' />
+              Go to repo
             </a>
             <div className="flex flex-wrap max-h-[60%] min-h-[25%] justify-center overflow-y-auto max-sm:hidden">
               {images2.map((src, index) => (
@@ -72,11 +81,11 @@ function CarouselComp() {
           </div>
         </div>
         <div className="max-w-[80%] h-5/6 max-md:w-screen overflow-y-hidden snap-center">
-          <div className="font-normal bg-white dark:bg-gray-400 h-full rounded shadow-lg dark:shadow-slate-600 p-6">
-            <h2 className="text-lg dark:text-white text-black font-bold mb-2 underline decoration-inherit">
+          <div className="h-full p-6 font-normal bg-white rounded shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+            <h2 className="mb-2 text-lg font-bold text-black underline dark:text-white decoration-inherit">
               Scaneame
             </h2>
-            <p className="  h-fit text-base text-gray-700 dark:text-white ">
+            <p className="text-base text-gray-700 h-fit dark:text-white">
               First group project at "Soy Henry." It is an online store for a
               fictitious clothing line. The use of new frameworks and
               dependencies was encouraged, so the project includes an
@@ -92,9 +101,17 @@ function CarouselComp() {
             <a
               href="https://scaneame.vercel.app/"
               target="_blank"
-              className="inline-block text-base bg-blue-500 hover:bg-blue-700 text-white font-bold mx-2 my-2 py-2 px-4 rounded-full"
+              className="inline-flex items-center self-center justify-center gap-2 px-3 py-2 mx-2 my-2 text-base font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
             >
               View project
+            </a>
+            <a
+              href="https://github.com/odalviarez/scaneaMe"
+              target="_blank"
+              className="inline-flex items-center self-center justify-center gap-2 px-3 py-2 mx-2 my-2 text-base font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700"
+            >
+              <BsGithub className='text-xs text-black cursor-pointer dark:text-white' />
+              Go to repo
             </a>
             <div className="flex flex-wrap max-h-[60%] min-h-[25%] justify-center overflow-y-auto max-sm:hidden">
               {images.map((src, index) => (

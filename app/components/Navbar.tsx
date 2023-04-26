@@ -6,13 +6,14 @@ const Navbar: React.FC = () => {
   return (
     <div className="fixed top-0 z-50 w-screen bg-white py-3 shadow-lg dark:bg-black ">
       <nav>
-        <ul className="mx-auto flex w-8/12 flex-row justify-between max-md:w-full max-md:px-4">
-          <div className="flex items-center justify-between gap-4">
+        <div className="mx-auto flex w-8/12 flex-row justify-between max-md:w-full max-md:px-4">
+          <ul className="flex items-center justify-between gap-4">
             <li>
               <a
                 href="https://www.linkedin.com/in/gonzalo-zucca-dev/?locale=en_US"
                 target="_blank"
                 rel="noreferrer"
+                title="LinkedIn"
               >
                 <BsLinkedin className="cursor-pointer text-3xl text-black dark:text-white" />
               </a>
@@ -23,13 +24,14 @@ const Navbar: React.FC = () => {
                 href="https://github.com/gzucca"
                 rel="noreferrer"
                 target="_blank"
+                title="GitHub"
               >
                 <BsGithub className="cursor-pointer text-3xl text-black dark:text-white" />
               </a>
             </li>
-          </div>
+          </ul>
 
-          <div className="flex items-center justify-between gap-4">
+          <ul className="flex items-center justify-between gap-4">
             <li>{<ThemeSwitch /> ? <ThemeSwitch /> : null}</li>
 
             <li>
@@ -42,8 +44,8 @@ const Navbar: React.FC = () => {
                 Resume
               </a>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </nav>
     </div>
   );

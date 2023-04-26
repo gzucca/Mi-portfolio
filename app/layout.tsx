@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className={`${explora.variable} ${comfortaa.variable}`}>
-      <head />
+    <html lang="en" className={`${explora.variable} ${comfortaa.variable}`}>
+      <title>My Portfolio</title>
       <body>
         <Providers>
           <Navbar />

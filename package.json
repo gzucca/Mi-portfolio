@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "watch": "tailwindcss -i ./styles/globals.css -o ./css/main.css --watch"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -31,7 +32,9 @@
     "react-simple-image-viewer": "^1.2.2",
     "tailwind-scrollbar": "^2.0.1",
     "typescript": "4.9.4",
-    "typewriter-effect": "^2.19.0"
+    "typewriter-effect": "^2.19.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",

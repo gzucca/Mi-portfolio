@@ -1,11 +1,9 @@
 "use client";
-import React from 'react'
-import { ThemeProvider } from 'next-themes'
+import React from "react";
+import { ThemeProvider } from "next-themes";
 
-const Providers = ({children} : {children: React.ReactNode}) => {
-    return (
-        <ThemeProvider attribute="class">{children}</ThemeProvider>
-    )
-}
+const Providers = ({ children }: { children: React.ReactNode }) => (
+  <ThemeProvider attribute="class">{children}</ThemeProvider>
+);
 
-export default Providers
+export default Providers;

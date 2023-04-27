@@ -43,11 +43,11 @@ function CarouselComp() {
         className="text-2xl text-black dark:text-white"
       >
         <div className="h-5/6 max-w-[80%] snap-center overflow-y-hidden max-md:w-screen">
-          <div className="h-full rounded bg-white p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+          <div className="h-full rounded bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
             <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
               API Food
             </h2>
-            <p className="h-fit text-base text-gray-700 dark:text-white">
+            <p className="h-fit text-base text-gray-700 dark:text-white 2xl:text-lg">
               First solo project at Soy Henry. It is a website that uses the
               Spoonacular API, with integration of a database. The use of
               frameworks and dependencies outside of the bootcamp syllabus was
@@ -71,7 +71,7 @@ function CarouselComp() {
               rel="noreferrer"
               className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
             >
-              <BsGithub className="cursor-pointer text-xs text-black dark:text-white" />
+              <BsGithub className="cursor-pointer text-xs text-white" />
               Go to repo
             </a>
             <div className="flex max-h-[60%] min-h-[25%] flex-wrap justify-center overflow-y-auto max-sm:hidden">
@@ -106,12 +106,12 @@ function CarouselComp() {
             </div>
           </div>
         </div>
-        <div className="h-5/6 max-w-[80%] snap-center overflow-y-hidden max-md:w-screen">
-          <div className="h-full rounded bg-white p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+        <div className="h-5/6 max-w-[80%] snap-center  max-md:w-screen">
+          <div className="h-full overflow-y-scroll rounded  bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
             <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
               Scaneame
             </h2>
-            <p className="h-fit text-base text-gray-700 dark:text-white">
+            <p className="h-fit text-base text-gray-700 dark:text-white 2xl:text-lg">
               First group project at &quot;Soy Henry.&quot; It is an online
               store for a fictitious clothing line. The use of new frameworks
               and dependencies was encouraged, so the project includes an
@@ -138,7 +138,7 @@ function CarouselComp() {
               rel="noreferrer"
               className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
             >
-              <BsGithub className="cursor-pointer text-xs text-black dark:text-white" />
+              <BsGithub className="cursor-pointer text-xs text-white" />
               Go to repo
             </a>
             <div className="flex max-h-[60%] min-h-[25%] flex-wrap justify-center overflow-y-auto max-sm:hidden">
@@ -169,6 +169,43 @@ function CarouselComp() {
                   closeOnClickOutside={true}
                 />
               )}
+            </div>
+          </div>
+        </div>
+        <div className="h-5/6 max-w-[80%] snap-center overflow-y-hidden max-md:w-screen">
+          <div className="h-full rounded  bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600 md:flex  md:flex-row">
+            <div className=" items-start md:flex md:w-2/3 md:flex-col">
+              <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
+                CryptoTracker Pro
+              </h2>
+              <p className="text-base text-gray-700 dark:text-white 2xl:text-lg">
+                First mobile APP created with React Native. It utilizes
+                Messari.io API to get updated cryptocurrency data, and displays
+                it in a responsive and user-friendly way. The user can save
+                their favorite cryptocurrencies, and receive updates on their
+                price with a 24-hours-refresh cycle. The app includes Redux for
+                a global state, Typescript for safe-typing, and styled
+                components for styling.
+              </p>
+              <a
+                href="https://github.com/gzucca/challenge-cripto-react-native"
+                target="_blank"
+                rel="noreferrer"
+                className=" my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700 md:self-start 2xl:my-6"
+              >
+                <BsGithub className="cursor-pointer text-xs text-white" />
+                Go to repo
+              </a>
+            </div>
+            <div className="mx-auto hidden flex-wrap md:flex md:flex-col">
+              <iframe
+                // width="352"
+                // height="626"
+                className="h-full "
+                src="https://www.youtube.com/embed/MHJxOF0PTYE"
+                title="CryptoTracker Pro"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              ></iframe>
             </div>
           </div>
         </div>

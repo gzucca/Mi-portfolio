@@ -13,12 +13,13 @@ import next from "../public/next.png";
 import nodeJS from "../public/nodeJS.png";
 import react from "../public/react.png";
 import redux from "../public/redux.png";
-import angular from "../public/angular.png";
+import vue from "../public/vue.png";
 import tailwind from "../public/tailwind.png";
 import CarouselComp from "./components/Carousel";
 import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
 import GraphemeSplitter from "grapheme-splitter";
+import { useEffect, useState } from "react";
 
 export default function Page() {
   const stringSplitter = (value: any) => {
@@ -26,100 +27,142 @@ export default function Page() {
     return splitter.splitGraphemes(value);
   };
 
+  const [playAnimation, setPlayAnimation] = useState(false);
+
+  useEffect(() => {
+    const onPageLoad = () => {
+      setPlayAnimation(true);
+    };
+
+    if (document.readyState === "complete") {
+      onPageLoad();
+    } else {
+      window.addEventListener("load", onPageLoad);
+    }
+    return () => window.removeEventListener("load", onPageLoad);
+  }, []);
+
   return (
     <div className="h-screen w-full snap-y snap-mandatory overflow-y-scroll bg-white scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-gray-900 dark:bg-slate-800 dark:scrollbar-track-blue-900 md:scroll-smooth">
-      <section className="mt-3 flex h-screen w-full snap-center flex-row items-center justify-around">
-        <div className="flex w-full flex-row items-center justify-center max-md:flex-col md:gap-4">
-          <div className="flex w-6/12 flex-col items-center justify-center overflow-hidden max-md:w-full md:gap-8">
-            <Typewriter
-              options={{
-                delay: 75,
-                wrapperClassName:
-                  "max-md:text-4xl max-sm:text-2xl text-5xl font-comfortaa",
-                stringSplitter,
-              }}
-              onInit={(typewriter: any) => {
-                typewriter
-                  .typeString(
-                    "<span style='color: rgb(147, 62, 62);'>Hi!</span> I'm Gonzalo <span class='wave'>👋</span>"
-                  )
-                  .start();
-              }}
-            />
+      {/* Landing */}
+      {playAnimation ? (
+        <section className="mt-3 flex h-screen w-full snap-center flex-row items-center justify-around">
+          <div className="flex w-full flex-row items-center justify-center max-md:flex-col md:gap-4">
+            <div className="flex w-6/12 flex-col items-center justify-center overflow-hidden max-md:w-full md:gap-8">
+              <Typewriter
+                options={{
+                  delay: 75,
+                  wrapperClassName:
+                    "max-md:text-4xl max-sm:text-2xl text-5xl font-comfortaa",
+                  stringSplitter,
+                }}
+                onInit={(typewriter: any) => {
+                  typewriter
+                    .typeString(
+                      "<span style='color: rgb(147, 62, 62);'>Hi!</span> I'm Gonzalo <span class='wave'>👋</span>"
+                    )
+                    .start();
+                }}
+              />
+              <Fade
+                direction="left"
+                triggerOnce={true}
+                className=" relative my-4 w-full opacity-0 max-md:w-full md:left-[12rem] 2xl:left-[14rem]"
+              >
+                <nav className="flex flex-col items-center justify-center text-end text-4xl text-slate-400 dark:text-slate-500">
+                  <div className="duration-200 hover:ease-in md:relative md:right-[42rem] md:w-[64rem] md:hover:right-[40rem]">
+                    <div className="border-b-2 hover:text-black dark:hover:text-white ">
+                      <a href="#aboutMe">About Me</a>
+                    </div>
+                    <div className="h-8 border-r-2 text-gray-700 dark:text-white"></div>
+                  </div>
+                  <div className="duration-200 hover:ease-in md:relative md:right-[39rem] md:w-[64rem] md:hover:right-[37rem] ">
+                    <div className=" border-b-2 hover:text-black dark:hover:text-white">
+                      <a href="#myProjects">My Projects</a>
+                    </div>
+                    <div className="h-8 border-r-2 "></div>
+                  </div>
+                  <div className="duration-200 hover:ease-in md:relative md:right-[36rem] md:w-[64rem] md:hover:right-[34rem]   ">
+                    <div className="border-b-2 hover:text-black dark:hover:text-white">
+                      <a href="#myTools">My Tools</a>
+                    </div>
+                    <div className="h-8 border-r-2 "></div>
+                  </div>
+                  <div className="duration-200 hover:ease-in md:relative md:right-[33rem] md:w-[64rem] md:hover:right-[31rem]  ">
+                    <div className="border-b-2 hover:text-black dark:hover:text-white">
+                      <a href="#contactMe">Get In Touch</a>
+                    </div>
+                    <div className="h-8 border-r-2 "></div>
+                  </div>
+                </nav>
+              </Fade>
+            </div>
+
             <Fade
-              direction="left"
+              direction="right"
               triggerOnce={true}
-              className="relative my-4 w-full max-md:w-full md:left-[12rem] 2xl:left-[14rem]"
+              className="h-6/12 max-md:h-7/12 my-4 w-6/12 overflow-hidden rounded-full max-md:w-7/12"
             >
-              <nav className="flex flex-col items-center justify-center text-end text-4xl text-slate-400 dark:text-slate-500">
-                <div className="duration-200 hover:ease-in md:relative md:right-[42rem] md:w-[64rem] md:hover:right-[40rem]">
-                  <div className="border-b-2 hover:text-black dark:hover:text-white ">
-                    <a href="#aboutMe">About Me</a>
-                  </div>
-                  <div className="h-8 border-r-2 text-gray-700 dark:text-white"></div>
-                </div>
-                <div className="duration-200 hover:ease-in md:relative md:right-[39rem] md:w-[64rem] md:hover:right-[37rem] ">
-                  <div className=" border-b-2 hover:text-black dark:hover:text-white">
-                    <a href="#myProjects">My Projects</a>
-                  </div>
-                  <div className="h-8 border-r-2 "></div>
-                </div>
-                <div className="duration-200 hover:ease-in md:relative md:right-[36rem] md:w-[64rem] md:hover:right-[34rem]   ">
-                  <div className="border-b-2 hover:text-black dark:hover:text-white">
-                    <a href="#myTools">My Tools</a>
-                  </div>
-                  <div className="h-8 border-r-2 "></div>
-                </div>
-                <div className="duration-200 hover:ease-in md:relative md:right-[33rem] md:w-[64rem] md:hover:right-[31rem]  ">
-                  <div className="border-b-2 hover:text-black dark:hover:text-white">
-                    <a href="#contactMe">Get In Touch</a>
-                  </div>
-                  <div className="h-8 border-r-2 "></div>
-                </div>
-              </nav>
+              <div>
+                <Image
+                  priority
+                  src={programming}
+                  alt="photo"
+                  className="object-cover"
+                />
+              </div>
             </Fade>
           </div>
-
-          <Fade
-            direction="right"
-            triggerOnce={true}
-            className="h-6/12 max-md:h-7/12 my-4 w-6/12 overflow-hidden rounded-full max-md:w-7/12"
-          >
-            <div>
-              <Image
-                priority
-                src={programming}
-                alt="photo"
-                className="object-cover"
+        </section>
+      ) : (
+        <div className="mt-3 flex h-screen w-full snap-center flex-row items-center justify-around">
+          <div role="status">
+            <svg
+              aria-hidden="true"
+              className="mr-2 h-24 w-24 animate-spin fill-blue-600 text-gray-200 dark:text-gray-600"
+              viewBox="0 0 100 101"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                fill="currentColor"
               />
-            </div>
-          </Fade>
+              <path
+                d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                fill="currentFill"
+              />
+            </svg>
+            <span className="sr-only">Loading...</span>
+          </div>
         </div>
-      </section>
+      )}
 
       <section
         id="aboutMe"
         className="mx-auto my-auto flex h-[85vh] w-[80vw] snap-center flex-col items-center justify-center"
       >
         <div className="h-full w-full">
-          <h1 className="font-roboto py-2 text-center text-4xl text-blue-900 dark:text-blue-300">
+          <h1 className="font-roboto py-2 text-center text-4xl  text-blue-900 dark:text-blue-300">
             Gonzalo Zucca
           </h1>
-          <h2 className="text-center text-2xl text-black dark:text-gray-200 ">
+          <h2 className="text-center text-2xl text-black dark:text-gray-200 2xl:text-3xl ">
             Full-Stack Developer
           </h2>
 
-          <div className="flex h-[80%] w-full flex-col gap-2 sm:flex-row">
-            <div className="mx-auto my-auto h-[35%] w-[75%] overflow-hidden rounded-full shadow-lg dark:shadow-slate-600 sm:h-[65%] sm:w-[35%]">
-              <Image
-                priority
-                src={photo}
-                alt="photo"
-                style={{ height: "100%", width: "100%", objectFit: "cover" }}
-              />
+          <div className="flex h-[80%] w-full flex-col items-center gap-4 lg:flex-row 2xl:gap-16">
+            <div className="mt-4 h-1/3 w-1/3  lg:h-2/3">
+              <div className="border-red mx-auto my-auto h-full w-auto overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600">
+                <Image
+                  priority
+                  src={photo}
+                  alt="photo"
+                  style={{ height: "100%", width: "100%", objectFit: "cover" }}
+                />
+              </div>
             </div>
-            <div className="mx-auto  my-auto flex h-[40%] w-[100%] items-center justify-center sm:h-[80%] sm:w-[40%]">
-              <p className="text-justify text-xs text-gray-700 dark:text-white">
+            <div className="mx-auto  my-auto flex h-2/3 items-center justify-center lg:h-full lg:w-2/3 ">
+              <p className=" text-justify text-xs text-gray-700 dark:text-white md:text-lg 2xl:text-xl">
                 {" "}
                 Hi there! I&apos;m Gonzalo. I have a bachelor&apos;s degree in
                 Marketing and the English Language, but I&apos;ve recently found
@@ -209,11 +252,11 @@ export default function Page() {
             <li className="group grid h-20 w-20 rounded-full bg-slate-200 transition delay-150 duration-300 ease-in-out hover:scale-110 dark:bg-slate-600">
               <Image
                 src={react}
-                alt="React"
+                alt="React JS and Native"
                 className="z-10 h-auto w-[60px] self-center justify-self-center pt-[0.7rem] transition delay-100 duration-300 ease-in-out group-hover:scale-125"
               ></Image>
-              <p className="scale-0 self-center justify-self-center text-gray-700 transition delay-150 duration-300 ease-in-out group-hover:translate-y-2 group-hover:scale-100 dark:text-white">
-                React JS
+              <p className="w-[120%] scale-0 self-center justify-self-center text-center text-gray-700 transition delay-150 duration-300 ease-in-out group-hover:translate-y-2 group-hover:scale-100 dark:text-white">
+                React JS & React Native
               </p>
             </li>
 
@@ -253,22 +296,22 @@ export default function Page() {
             <li className="group grid h-20 w-20 rounded-full bg-slate-200 transition delay-150 duration-300 ease-in-out hover:scale-110 dark:bg-slate-600">
               <Image
                 src={next}
-                alt="Next"
+                alt="Next JS"
                 className="z-10 h-auto w-[60px] self-center justify-self-center pt-[0.6rem] transition delay-100 duration-300 ease-in-out group-hover:scale-125"
               ></Image>
               <p className="scale-0 self-center justify-self-center text-gray-700 transition delay-150 duration-300 ease-in-out group-hover:translate-y-2 group-hover:scale-100 dark:text-white">
-                Next.js
+                Next JS
               </p>
             </li>
 
             <li className="group grid h-20 w-20 rounded-full bg-slate-200 transition delay-150 duration-300 ease-in-out hover:scale-110 dark:bg-slate-600">
               <Image
-                src={angular}
-                alt="Angular"
-                className="z-10 h-auto w-[60px] self-center justify-self-center pt-[0.6rem] transition delay-100 duration-300 ease-in-out group-hover:scale-125"
+                src={vue}
+                alt="Vue JS"
+                className="z-10 h-auto w-[60px] self-center justify-self-center pt-[0.9rem] transition delay-100 duration-300 ease-in-out group-hover:scale-125"
               ></Image>
               <p className="scale-0 self-center justify-self-center text-gray-700 transition delay-150 duration-300 ease-in-out group-hover:translate-y-2 group-hover:scale-100 dark:text-white">
-                Angular
+                Vue JS
               </p>
             </li>
           </ul>

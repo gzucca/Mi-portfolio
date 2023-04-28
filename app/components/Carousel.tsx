@@ -195,12 +195,12 @@ function CarouselComp() {
                   </h2>
                   <p className="text-base text-gray-700 dark:text-white 2xl:text-lg">
                     First mobile APP created with React Native. It utilizes
-                    Messari.io API to get updated cryptocurrency data, and
+                    Messari.io API to get updated cryptocurrency data and
                     displays it in a responsive and user-friendly way. The user
                     can save their favorite cryptocurrencies, and receive
-                    updates on their price with a 24-hours-refresh cycle. The
-                    app includes Redux for a global state, Typescript for
-                    safe-typing, and styled components for styling.
+                    updates on their price with a 24-hours refresh cycle. The
+                    app includes Redux for a global state, Typescript for safe
+                    typing, and Styled Components for styling.
                   </p>
                   <a
                     href="https://github.com/gzucca/challenge-cripto-react-native"

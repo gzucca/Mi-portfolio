@@ -19,7 +19,7 @@ import CarouselComp from "./components/Carousel";
 import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
 import GraphemeSplitter from "grapheme-splitter";
-import Loading from "./components/loading";
+import Loading from "./components/Loading";
 import { useEffect, useState } from "react";
 
 export default function Page() {
@@ -130,8 +130,8 @@ export default function Page() {
             Full-Stack Developer
           </h2>
 
-          <div className="flex h-[80%] w-full flex-col items-center gap-4 lg:flex-row 2xl:gap-16">
-            <div className="mt-4 h-1/3 w-1/3  lg:h-2/3">
+          <div className="flex h-[80%] w-full flex-col items-center gap-4 md:gap-10 lg:flex-row 2xl:gap-16">
+            <div className="mt-4 h-1/3 w-2/3 md:h-1/2 md:w-2/3 lg:h-2/3 lg:w-1/3">
               <div className="border-red mx-auto my-auto h-full w-auto overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600">
                 <Image
                   priority
@@ -141,8 +141,8 @@ export default function Page() {
                 />
               </div>
             </div>
-            <div className="mx-auto  my-auto flex h-2/3 items-center justify-center lg:h-full lg:w-2/3 ">
-              <p className=" text-justify text-xs text-gray-700 dark:text-white md:text-lg 2xl:text-xl">
+            <div className="mx-auto  my-auto flex h-2/3 items-center justify-center md:h-1/2 lg:h-full lg:w-2/3 ">
+              <p className=" text-justify text-xs text-gray-700 dark:text-white md:text-xl">
                 {" "}
                 Hi there! I&apos;m Gonzalo. I have a bachelor&apos;s degree in
                 Marketing and the English Language, but I&apos;ve recently found

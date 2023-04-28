@@ -19,7 +19,7 @@ import CarouselComp from "./components/Carousel";
 import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
 import GraphemeSplitter from "grapheme-splitter";
-import Loading from "./components/Loading";
+import Loading from "./components/LoadingComp";
 import { useEffect, useState } from "react";
 
 export default function Page() {

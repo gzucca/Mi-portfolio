@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
-import photo from "../public/foto-cv.jpeg";
+import photo from "../public/foto-portfolio.webp";
+import photoMobile from "../public/foto-portfolio-mobile.webp";
 import programming from "../public/programming.svg";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
@@ -101,7 +102,7 @@ export default function Page() {
             <Fade
               direction="right"
               triggerOnce={true}
-              className="h-6/12 max-md:h-7/12 my-4 w-6/12 overflow-hidden rounded-full max-md:w-7/12"
+              className="h-6/12 max-md:h-7/12 my-4 w-6/12 overflow-hidden rounded-full opacity-0 max-md:w-7/12"
             >
               <div>
                 <Image
@@ -131,13 +132,24 @@ export default function Page() {
           </h2>
 
           <div className="flex h-[80%] w-full flex-col items-center gap-4 md:gap-10 lg:flex-row 2xl:gap-16">
-            <div className="mt-4 h-1/3 w-2/3 md:h-1/2 md:w-2/3 lg:h-2/3 lg:w-1/3">
-              <div className="border-red mx-auto my-auto h-full w-auto overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600">
+            <div className="mt-4 h-1/3 w-2/3 md:h-1/2 md:w-2/3 lg:h-full lg:w-1/2">
+              <div className="relative mx-auto my-auto hidden h-full w-auto overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:block ">
                 <Image
                   priority
                   src={photo}
                   alt="photo"
-                  style={{ height: "100%", width: "100%", objectFit: "cover" }}
+                  fill={true}
+                  style={{ objectFit: "cover" }}
+                  sizes="50vw"
+                />
+              </div>
+              <div className="relative mx-auto my-auto h-full w-[60%] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:hidden ">
+                <Image
+                  priority
+                  src={photoMobile}
+                  alt="photo"
+                  fill={true}
+                  style={{ objectFit: "cover" }}
                 />
               </div>
             </div>

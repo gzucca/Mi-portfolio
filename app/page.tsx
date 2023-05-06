@@ -143,7 +143,7 @@ export default function Page() {
                   sizes="50vw"
                 />
               </div>
-              <div className="relative mx-auto my-auto h-full w-[60%] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:hidden ">
+              <div className="relative mx-auto my-auto h-full w-[33vw] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:hidden ">
                 <Image
                   priority
                   src={photoMobile}

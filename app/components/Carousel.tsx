@@ -49,16 +49,16 @@ function CarouselComp() {
   return (
     <>
       {openedPrompt === false ? (
-        <div className=" mx-3 h-full">
+        <div className=" mx-auto grid w-11/12 place-content-center ">
           <Carousel
             slide={false}
             indicators={false}
             leftControl="<"
             rightControl=">"
-            className="text-2xl text-black dark:text-white"
+            className="mx-auto h-screen w-screen place-content-center text-2xl text-black dark:text-white"
           >
-            <div className=" h-5/6 max-w-[80%] snap-center overflow-y-hidden max-md:w-screen">
-              <div className=" h-full rounded bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+            <div className="h-5/6 max-w-[80%]  snap-center overflow-y-hidden ">
+              <div className="h-full rounded bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
                 <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
                   API Food
                 </h2>
@@ -122,8 +122,8 @@ function CarouselComp() {
                 </div>
               </div>
             </div>
-            <div className="h-5/6 max-w-[80%] snap-center  max-md:w-screen">
-              <div className="h-full overflow-y-scroll rounded  bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+            <div className="h-5/6 max-w-[80%] snap-center overflow-y-hidden ">
+              <div className="h-full rounded  bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
                 <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
                   Scaneame
                 </h2>
@@ -187,7 +187,7 @@ function CarouselComp() {
                 </div>
               </div>
             </div>
-            <div className="h-5/6 max-w-[80%] snap-center overflow-y-hidden max-md:w-screen">
+            <div className="h-5/6 max-w-[80%] snap-center overflow-y-hidden ">
               <div className="h-full rounded  bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600 md:flex  md:flex-row">
                 <div className=" items-start md:flex md:w-2/3 md:flex-col">
                   <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">

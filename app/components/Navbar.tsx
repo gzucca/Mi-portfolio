@@ -4,9 +4,9 @@ import ThemeSwitch from "./DarkMode";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="fixed top-0 z-50 w-screen bg-white py-3 shadow-lg dark:bg-black ">
+    <div className="absolute z-50 block w-full  bg-white py-3 shadow-lg dark:bg-black ">
       <nav>
-        <div className="mx-auto flex w-8/12 flex-row justify-between max-md:w-full max-md:px-4">
+        <div className="container mx-auto flex w-8/12 flex-row justify-between">
           <ul className="flex items-center justify-between gap-4">
             <li>
               <a

@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${explora.variable} ${comfortaa.variable}`}>
       <title>My Portfolio</title>
-      <body>
+      <body className=" overflow-y-hidden">
         <Providers>
           <Navbar />
           {children}

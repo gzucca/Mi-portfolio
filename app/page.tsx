@@ -47,7 +47,10 @@ export default function Page() {
     <div className="h-screen w-full snap-y snap-mandatory overflow-y-scroll bg-white scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-gray-900 dark:bg-slate-800 dark:scrollbar-track-blue-900 md:scroll-smooth">
       {/* Landing */}
       {playAnimation ? (
-        <section className="mt-3 flex h-screen w-full snap-center flex-row items-center justify-around">
+        <section
+          id="Landing"
+          className="flex h-full w-full snap-center flex-row items-center justify-around"
+        >
           <div className="flex w-full flex-row items-center justify-center max-md:flex-col md:gap-4">
             <div className="flex w-6/12 flex-col items-center justify-center overflow-hidden max-md:w-full md:gap-8">
               <Typewriter
@@ -121,7 +124,7 @@ export default function Page() {
 
       <section
         id="aboutMe"
-        className="mx-auto my-auto flex h-[85vh] w-[80vw] snap-center flex-col items-center justify-center"
+        className="mx-auto flex h-full w-11/12 snap-center flex-col items-center justify-center pt-12"
       >
         <div className="h-full w-full">
           <h1 className="font-roboto py-2 text-center text-4xl  text-blue-900 dark:text-blue-300">
@@ -131,8 +134,8 @@ export default function Page() {
             Full-Stack Developer
           </h2>
 
-          <div className="flex h-[80%] w-full flex-col items-center gap-4 md:gap-10 lg:flex-row 2xl:gap-16">
-            <div className="mt-4 h-1/3 w-2/3 md:h-1/2 md:w-2/3 lg:h-full lg:w-1/2">
+          <div className="flex  h-[80%] w-full flex-col items-center gap-4 md:gap-10 lg:flex-row 2xl:gap-16">
+            <div className="relative mt-4 h-1/3 w-full md:h-1/2 md:w-1/3 lg:-top-16 lg:h-full ">
               <div className="relative mx-auto my-auto hidden h-full w-auto overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:block ">
                 <Image
                   priority
@@ -143,7 +146,7 @@ export default function Page() {
                   sizes="50vw"
                 />
               </div>
-              <div className="relative mx-auto my-auto h-full w-[33vw] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:hidden ">
+              <div className="relative mx-auto my-auto h-full w-[33vw] min-w-[120px] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:hidden ">
                 <Image
                   priority
                   src={photoMobile}
@@ -153,33 +156,37 @@ export default function Page() {
                 />
               </div>
             </div>
-            <div className="mx-auto  my-auto flex h-2/3 items-center justify-center md:h-1/2 lg:h-full lg:w-2/3 ">
+            <div className="mx-auto my-auto  flex h-2/3 w-10/12 flex-col items-center justify-center gap-4  md:h-1/2 md:gap-8 lg:h-full lg:w-2/3 ">
               <p className=" text-justify text-xs text-gray-700 dark:text-white md:text-xl">
                 {" "}
                 Hi there! I&apos;m Gonzalo. I have a bachelor&apos;s degree in
                 Marketing and the English Language, but I&apos;ve recently found
                 my true passion in programming and decided to become a
-                Full-Stack Web Developer. <br></br> <br></br> Since then, I have
-                successfully graduated from &quot;Soy Henry&quot; Coding
-                Bootcamp, where I&apos;ve learned the basics of web programming
-                with Javascript and some of its most widely utilized frameworks
-                and libraries: tools such as React, Redux, Node JS, and Express
-                and many more that I&apos;ve used in different projects. And
-                I&apos;m excited to say that this is only the beginning of my
-                career in this ever-growing profession which is web programming.{" "}
+                Full-Stack Web Developer.
+              </p>
+
+              <p className=" text-justify text-xs text-gray-700 dark:text-white md:text-xl">
+                Since then, I have successfully graduated from &quot;Soy
+                Henry&quot; Coding Bootcamp, where I&apos;ve learned the basics
+                of web programming with Javascript and some of its most widely
+                utilized frameworks and libraries: tools such as React, Redux,
+                Node JS, and Express and many more that I&apos;ve used in
+                different projects. And I&apos;m excited to say that this is
+                only the beginning of my career in this ever-growing profession
+                which is web programming.{" "}
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="myProjects" className="h-screen snap-center pt-6 ">
+      <section id="myProjects" className="mx-auto h-full w-full snap-center ">
         <CarouselComp></CarouselComp>
       </section>
 
       <section
         id="myTools"
-        className="mx-auto my-auto h-[85vh] w-[80vw] snap-center"
+        className="container mx-auto h-full max-w-[95%] snap-center"
       >
         <div className="flex h-full w-full flex-col items-center justify-center align-middle">
           <h1 className="font-roboto text-center text-3xl text-gray-800 dark:text-blue-300">
@@ -312,7 +319,7 @@ export default function Page() {
 
       <section
         id="contactMe"
-        className="flex h-screen w-full snap-center flex-col items-center justify-center px-8"
+        className="container mx-auto flex h-screen snap-center flex-col items-center justify-center"
       >
         <div className="mx-auto flex flex-col items-center justify-center sm:w-full md:h-screen md:w-10/12 lg:w-8/12">
           <div className="m-8 mx-auto w-full text-center">
@@ -321,7 +328,7 @@ export default function Page() {
             </h2>
           </div>
 
-          <div className="py-8">
+          <div className="w-11/12 py-8">
             <p className="text-2xl text-gray-700 dark:text-white max-sm:text-lg">
               I&apos;m currently looking for full-time Frontend or Full-Stack
               opportunities! If you know of any positions available, if you have

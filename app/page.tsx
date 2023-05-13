@@ -1,21 +1,22 @@
 "use client";
 import Image from "next/image";
-import photo from "../public/foto-portfolio.webp";
-import photoMobile from "../public/foto-portfolio-mobile.webp";
-import programming from "../public/programming.svg";
+import photo from "../public/pictures/foto-portfolio.webp";
+import photoMobile from "../public/pictures/foto-portfolio-mobile.webp";
+import programming from "../public/pictures/programming.svg";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
-import css from "../public/css.png";
-import express from "../public/express.png";
-import git from "../public/git.png";
-import html from "../public/html.png";
-import javascriptLogo from "../public/javascriptLogo.png";
-import next from "../public/next.png";
-import nodeJS from "../public/nodeJS.png";
-import react from "../public/react.png";
-import redux from "../public/redux.png";
-import vue from "../public/vue.png";
-import tailwind from "../public/tailwind.png";
+import css from "../public/icons/css.png";
+import express from "../public/icons/express.png";
+import git from "../public/icons/git.png";
+import html from "../public/icons/html.webp";
+import javascriptLogo from "../public/icons/javascriptLogo.png";
+import next from "../public/icons/next.png";
+import nodeJS from "../public/icons/nodeJS.png";
+import react from "../public/icons/react.png";
+import redux from "../public/icons/redux.png";
+import vue from "../public/icons/vue.webp";
+import tailwind from "../public/icons/tailwind.png";
+import docker from "../public/icons/docker.webp";
 import CarouselComp from "./components/Carousel";
 import Typewriter from "typewriter-effect";
 import { Fade } from "react-awesome-reveal";
@@ -44,7 +45,7 @@ export default function Page() {
     return () => window.removeEventListener("load", onPageLoad);
   }, []);
   return (
-    <div className="h-screen w-full snap-y snap-mandatory overflow-y-scroll bg-white scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-gray-900 dark:bg-slate-800 dark:scrollbar-track-blue-900 md:scroll-smooth">
+    <div className="h-screen w-full snap-y snap-mandatory overflow-y-scroll bg-white scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-gray-900 dark:bg-slate-900 dark:scrollbar-track-blue-900 md:scroll-smooth">
       {/* Landing */}
       {playAnimation ? (
         <section
@@ -122,6 +123,7 @@ export default function Page() {
         <Loading />
       )}
 
+      {/* About me */}
       <section
         id="aboutMe"
         className="mx-auto flex h-full w-11/12 snap-center flex-col items-center justify-center pt-12"
@@ -153,6 +155,7 @@ export default function Page() {
                   alt="photo"
                   fill={true}
                   style={{ objectFit: "cover" }}
+                  sizes="90vw"
                 />
               </div>
             </div>
@@ -180,18 +183,21 @@ export default function Page() {
         </div>
       </section>
 
+      {/* My Projects */}
       <section id="myProjects" className="mx-auto h-full w-full snap-center ">
         <CarouselComp></CarouselComp>
       </section>
 
+      {/* My Tools */}
       <section
         id="myTools"
         className="container mx-auto h-full max-w-[95%] snap-center"
       >
-        <div className="flex h-full w-full flex-col items-center justify-center align-middle">
-          <h1 className="font-roboto text-center text-3xl text-gray-800 dark:text-blue-300">
+        <div className="flex h-full w-full  flex-col items-center justify-center align-middle">
+          <h1 className="font-roboto text-3xl  text-gray-800 dark:text-blue-300">
             My tools
           </h1>
+
           <ul className="mt-4 flex flex-wrap justify-center gap-4 sm:mt-16 ">
             <li className="group grid h-20 w-20 rounded-full bg-slate-200 transition delay-150 duration-300 ease-in-out hover:scale-110 dark:bg-slate-600">
               <Image
@@ -252,7 +258,7 @@ export default function Page() {
               <Image
                 src={react}
                 alt="React JS and Native"
-                className="z-10 h-auto w-[60px] self-center justify-self-center pt-[0.7rem] transition delay-100 duration-300 ease-in-out group-hover:scale-125"
+                className="z-10 h-auto w-[70px] self-center justify-self-center object-cover pt-[0.6rem] transition delay-100 duration-300 ease-in-out group-hover:scale-125"
               ></Image>
               <p className="w-[120%] scale-0 self-center justify-self-center text-center text-gray-700 transition delay-150 duration-300 ease-in-out group-hover:translate-y-2 group-hover:scale-100 dark:text-white">
                 React JS & React Native
@@ -313,10 +319,22 @@ export default function Page() {
                 Vue JS
               </p>
             </li>
+
+            <li className="group grid h-20 w-20 rounded-full bg-slate-200 transition delay-150 duration-300 ease-in-out hover:scale-110 dark:bg-slate-600">
+              <Image
+                src={docker}
+                alt="Docker"
+                className="z-10 h-auto w-[60px] self-center justify-self-center pt-[0.6rem] transition delay-100 duration-300 ease-in-out group-hover:scale-125"
+              ></Image>
+              <p className="scale-0 self-center justify-self-center text-gray-700 transition delay-150 duration-300 ease-in-out group-hover:translate-y-2 group-hover:scale-100 dark:text-white">
+                Docker
+              </p>
+            </li>
           </ul>
         </div>
       </section>
 
+      {/* Contact Me */}
       <section
         id="contactMe"
         className="container mx-auto flex h-screen snap-center flex-col items-center justify-center"

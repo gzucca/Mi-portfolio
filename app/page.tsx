@@ -45,12 +45,12 @@ export default function Page() {
     return () => window.removeEventListener("load", onPageLoad);
   }, []);
   return (
-    <div className="h-screen w-full snap-y snap-mandatory overflow-y-scroll bg-white scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-gray-900 dark:bg-slate-900 dark:scrollbar-track-blue-900 md:scroll-smooth">
+    <main className="overflow-x-hidden scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-gray-900 dark:bg-slate-900 dark:scrollbar-track-blue-900 ">
       {/* Landing */}
       {playAnimation ? (
         <section
           id="Landing"
-          className="flex h-full w-full snap-center flex-row items-center justify-around"
+          className="spikes mx-auto flex min-h-screen w-full flex-row items-center justify-around"
         >
           <div className="flex w-full flex-row items-center justify-center max-md:flex-col md:gap-4">
             <div className="flex w-6/12 flex-col items-center justify-center overflow-hidden max-md:w-full md:gap-8">
@@ -126,19 +126,16 @@ export default function Page() {
       {/* About me */}
       <section
         id="aboutMe"
-        className="mx-auto flex h-full w-11/12 snap-center flex-col items-center justify-center pt-12"
+        className="mx-auto flex min-h-screen w-11/12 flex-col items-center justify-center pt-12"
       >
         <div className="h-full w-full">
-          <h1 className="font-roboto py-2 text-center text-4xl  text-blue-900 dark:text-blue-300">
-            Gonzalo Zucca
-          </h1>
-          <h2 className="text-center text-2xl text-black dark:text-gray-200 2xl:text-3xl ">
+          <h2 className="text-center text-2xl text-black dark:text-gray-300 md:hidden 2xl:text-3xl ">
             Full-Stack Developer
           </h2>
 
           <div className="flex  h-[80%] w-full flex-col items-center gap-4 md:gap-10 lg:flex-row 2xl:gap-16">
-            <div className="relative mt-4 h-1/3 w-full md:h-1/2 md:w-1/3 lg:-top-16 lg:h-full ">
-              <div className="relative mx-auto my-auto hidden h-full w-auto overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:block ">
+            <div className="relative mt-4 h-1/3 w-full md:h-1/2 md:w-1/3 lg:h-full lg:w-1/2 ">
+              <div className="relative mx-auto my-auto hidden min-h-[70vh] w-auto overflow-hidden shadow-lg dark:shadow-slate-600 md:block ">
                 <Image
                   priority
                   src={photo}
@@ -148,7 +145,7 @@ export default function Page() {
                   sizes="50vw"
                 />
               </div>
-              <div className="relative mx-auto my-auto h-full w-[33vw] min-w-[120px] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:hidden ">
+              <div className="relative mx-auto my-auto h-32  w-[33vw] min-w-[120px] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:hidden ">
                 <Image
                   priority
                   src={photoMobile}
@@ -160,23 +157,35 @@ export default function Page() {
               </div>
             </div>
             <div className="mx-auto my-auto  flex h-2/3 w-10/12 flex-col items-center justify-center gap-4  md:h-1/2 md:gap-8 lg:h-full lg:w-2/3 ">
-              <p className=" text-justify text-xs text-gray-700 dark:text-white md:text-xl">
-                {" "}
-                Hi there! I&apos;m Gonzalo. I have a bachelor&apos;s degree in
-                Marketing and the English Language, but I&apos;ve recently found
-                my true passion in programming and decided to become a
-                Full-Stack Web Developer.
-              </p>
+              <div>
+                <h1 className="hidden text-6xl text-gray-700 dark:text-white max-sm:text-4xl md:block">
+                  Gonzalo Zucca
+                </h1>
+                <h2 className="hidden text-center text-2xl text-black dark:text-gray-400 md:block 2xl:text-3xl ">
+                  Full-Stack Developer
+                </h2>
+              </div>
 
               <p className=" text-justify text-xs text-gray-700 dark:text-white md:text-xl">
-                Since then, I have successfully graduated from &quot;Soy
-                Henry&quot; Coding Bootcamp, where I&apos;ve learned the basics
-                of web programming with Javascript and some of its most widely
-                utilized frameworks and libraries: tools such as React, Redux,
-                Node JS, and Express and many more that I&apos;ve used in
-                different projects. And I&apos;m excited to say that this is
-                only the beginning of my career in this ever-growing profession
-                which is web programming.{" "}
+                I'm Gonzalo Zucca, a Marketing graduate with a degree in the
+                English Language from "Universidad del Salvador" in Argentina.
+                My whole life I have been a tech and programming enthusiast,
+                until last year when I finllay decided to enter a Full Stack
+                Development Bootcamp and found my true passion.
+                <br />
+                <br />
+                In "Soy Henry" Coding Bootcamp I learned the fundamentals of web
+                programming including languages, data structures and algorithms,
+                frameworks, markup languages, Agile methodologies, and much
+                more. Since finishing the bootcamp I've been working in
+                different proyects and studyng non-stop new technologies in the
+                field, good practices, other languages, and stacks. I have
+                started my AWS certification on cloud computing services, and
+                learned containerization technologies with Docker.
+                <br />
+                <br />
+                And I'm excited to say that this is only the beginning of my
+                career in this ever-growing profession which is web programming.
               </p>
             </div>
           </div>
@@ -184,17 +193,14 @@ export default function Page() {
       </section>
 
       {/* My Projects */}
-      <section id="myProjects" className="mx-auto h-full w-full snap-center ">
+      <section id="myProjects" className="mx-auto min-h-screen w-full ">
         <CarouselComp></CarouselComp>
       </section>
 
       {/* My Tools */}
-      <section
-        id="myTools"
-        className="container mx-auto h-full max-w-[95%] snap-center"
-      >
+      <section id="myTools" className="container mx-auto h-[50vh] ">
         <div className="flex h-full w-full  flex-col items-center justify-center align-middle">
-          <h1 className="font-roboto text-3xl  text-gray-800 dark:text-blue-300">
+          <h1 className="text-6xl text-gray-700 dark:text-white max-sm:text-4xl">
             My tools
           </h1>
 
@@ -337,10 +343,10 @@ export default function Page() {
       {/* Contact Me */}
       <section
         id="contactMe"
-        className="container mx-auto flex h-screen snap-center flex-col items-center justify-center"
+        className="container mx-auto flex min-h-[50vh] flex-col items-center justify-center"
       >
-        <div className="mx-auto flex flex-col items-center justify-center sm:w-full md:h-screen md:w-10/12 lg:w-8/12">
-          <div className="m-8 mx-auto w-full text-center">
+        <div className="mx-auto my-4 flex flex-col items-center justify-center sm:w-full md:w-10/12 lg:w-8/12">
+          <div className="mx-auto w-full text-center">
             <h2 className="text-6xl text-gray-700 dark:text-white max-sm:text-4xl">
               Contact Me!
             </h2>
@@ -396,6 +402,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }

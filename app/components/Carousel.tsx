@@ -24,6 +24,7 @@ function CarouselComp() {
     "https://i.ibb.co/Cz6QP1W/food3.jpg",
     "https://i.ibb.co/D5Tsy8H/food4.jpg",
   ];
+  const images3 = ["https://i.ibb.co/FsjPj7p/Screenshot-star-wars-api.jpg"];
 
   const [openedPrompt, setOpenedPrompt] = useState(false);
 
@@ -187,6 +188,7 @@ function CarouselComp() {
                 </div>
               </div>
             </div>
+
             <div className="h-5/6 max-w-[80%] snap-center overflow-y-hidden ">
               <div className="h-full rounded  bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600 md:flex  md:flex-row">
                 <div className=" items-start md:flex md:w-2/3 md:flex-col">
@@ -219,6 +221,73 @@ function CarouselComp() {
                     title="CryptoTracker Pro"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   ></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div className="h-5/6 max-w-[80%]  snap-center overflow-y-hidden ">
+              <div className="h-full rounded bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+                <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
+                  Star Wars Microservices
+                </h2>
+                <p className="text-base text-gray-700 dark:text-white 2xl:text-lg">
+                  Backend API with microservices structure created with Docker.
+                  Hosted in Google Cloud Platform.
+                </p>
+                <button
+                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                  onClick={handleOpenLink(
+                    "https://star-wars-microservices-client.vercel.app/"
+                  )}
+                >
+                  View project
+                </button>
+                <a
+                  href="https://github.com/gzucca/star-wars-microservices-client"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                >
+                  <BsGithub className="cursor-pointer text-xs text-white" />
+                  Go to repo Client
+                </a>
+                <a
+                  href="https://github.com/gzucca/star_wars_microservices"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                >
+                  <BsGithub className="cursor-pointer text-xs text-white" />
+                  Go to repo Backend
+                </a>
+                <div className="flex max-h-[60%] min-h-[25%] flex-wrap justify-center overflow-y-auto max-sm:hidden">
+                  {images3.map((src, index) => (
+                    <img
+                      src={src}
+                      onClick={() => openImageViewer(index)}
+                      key={index}
+                      style={{
+                        margin: "4px",
+                        width: "max(250px, 15vw)",
+                        height: "max(200px, 18vh)",
+                        cursor: "pointer",
+                      }}
+                      alt=""
+                    />
+                  ))}
+
+                  {isViewerOpen && (
+                    <ImageViewer
+                      src={images3}
+                      currentIndex={currentImage}
+                      onClose={closeImageViewer}
+                      disableScroll={false}
+                      backgroundStyle={{
+                        backgroundColor: "rgba(0,0,0,0.9)",
+                      }}
+                      closeOnClickOutside={true}
+                    />
+                  )}
                 </div>
               </div>
             </div>

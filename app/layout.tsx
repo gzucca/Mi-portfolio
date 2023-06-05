@@ -21,9 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${explora.variable} ${comfortaa.variable}`}>
+    <html lang="en" className={`${explora.variable} ${comfortaa.variable} scroll-smooth`}>
       <title>My Portfolio</title>
-      <body className=" overflow-y-hidden">
+      <body >
         <Providers>
           <Navbar />
           {children}

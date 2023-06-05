@@ -167,24 +167,24 @@ export default function Page() {
               </div>
 
               <p className=" text-justify text-xs text-gray-700 dark:text-white md:text-xl">
-                I'm Gonzalo Zucca, a Marketing graduate with a degree in the
-                English Language from "Universidad del Salvador" in Argentina.
+                I&lsquo;m Gonzalo Zucca, a Marketing graduate with a degree in the
+                English Language from &ldquo;Universidad del Salvador&ldquo; in Argentina.
                 My whole life I have been a tech and programming enthusiast,
                 until last year when I finllay decided to enter a Full Stack
                 Development Bootcamp and found my true passion.
                 <br />
                 <br />
-                In "Soy Henry" Coding Bootcamp I learned the fundamentals of web
+                In &ldquo;Soy Henry&ldquo; Coding Bootcamp I learned the fundamentals of web
                 programming including languages, data structures and algorithms,
                 frameworks, markup languages, Agile methodologies, and much
-                more. Since finishing the bootcamp I've been working in
+                more. Since finishing the bootcamp I&lsquo;ve been working in
                 different proyects and studyng non-stop new technologies in the
                 field, good practices, other languages, and stacks. I have
                 started my AWS certification on cloud computing services, and
                 learned containerization technologies with Docker.
                 <br />
                 <br />
-                And I'm excited to say that this is only the beginning of my
+                And I&lsquo;m excited to say that this is only the beginning of my
                 career in this ever-growing profession which is web programming.
               </p>
             </div>

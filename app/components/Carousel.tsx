@@ -61,14 +61,14 @@ function CarouselComp() {
             indicators={false}
             leftControl="<"
             rightControl=">"
-            className="mx-auto h-screen w-screen place-content-center text-2xl text-black dark:text-white"
+            className="mx-auto h-screen w-screen place-content-center text-2xl lg:text-5xl text-black dark:text-white"
           >
             <div className="h-5/6 max-w-[80%]  snap-center overflow-y-hidden ">
-              <div className="h-full rounded overflow-y-auto bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
-                <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
+              <div className="h-full overflow-y-auto rounded bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+                <h2 className="text-lg font-bold text-black underline decoration-inherit dark:text-white lg:text-4xl">
                   API Food
                 </h2>
-                <p className="h-fit text-base text-gray-700 dark:text-white 2xl:text-lg">
+                <p className=" my-2 text-base text-black dark:text-white md:my-4 md:text-lg lg:text-2xl">
                   First solo project at &quot;Soy Henry&quot;. It is a website
                   that uses the Spoonacular API, with integration of a database.
                   The use of frameworks and dependencies outside of the bootcamp
@@ -80,7 +80,7 @@ function CarouselComp() {
                   within the website.
                 </p>
                 <button
-                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:text-xl lg:text-2xl md:mb-2"
                   onClick={handleOpenLink(
                     "https://pi-api-food.up.railway.app/"
                   )}
@@ -91,9 +91,9 @@ function CarouselComp() {
                   href="https://github.com/gzucca/PI-API-Food"
                   target="_blank"
                   rel="noreferrer"
-                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:text-xl lg:text-2xl md:mb-2"
                 >
-                  <BsGithub className="cursor-pointer text-xs text-white" />
+                  <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo
                 </a>
                 <div className="flex max-h-[60%] min-h-[25%] flex-wrap justify-center overflow-y-auto max-sm:hidden">
@@ -129,11 +129,11 @@ function CarouselComp() {
               </div>
             </div>
             <div className="h-5/6 max-w-[80%] snap-center overflow-y-hidden ">
-              <div className="h-full rounded overflow-y-auto bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
-                <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
+              <div className="h-full overflow-y-auto rounded bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+                <h2 className="text-lg font-bold text-black underline decoration-inherit dark:text-white lg:text-4xl">
                   Scaneame
                 </h2>
-                <p className="h-fit text-base text-gray-700  dark:text-white 2xl:text-lg">
+                <p className=" my-2 text-base text-black dark:text-white md:my-4 md:text-lg lg:text-2xl">
                   First group project at &quot;Soy Henry.&quot; It is an online
                   store for a fictitious clothing line. The use of new
                   frameworks and dependencies was encouraged, so the project
@@ -148,7 +148,7 @@ function CarouselComp() {
                   catalog is also manageable from the dashboard in the website.
                 </p>
                 <button
-                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:text-xl lg:text-2xl md:mb-2"
                   onClick={handleOpenLink("https://scaneame.vercel.app/")}
                 >
                   View project
@@ -157,9 +157,9 @@ function CarouselComp() {
                   href="https://github.com/odalviarez/scaneaMe"
                   target="_blank"
                   rel="noreferrer"
-                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:text-xl lg:text-2xl md:mb-2"
                 >
-                  <BsGithub className="cursor-pointer text-xs text-white" />
+                  <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo
                 </a>
                 <div className="flex max-h-[60%] min-h-[25%] flex-wrap justify-center overflow-y-auto max-sm:hidden">
@@ -195,12 +195,12 @@ function CarouselComp() {
             </div>
 
             <div className="h-5/6 max-w-[80%] snap-center overflow-y-hidden ">
-              <div className="h-full rounded overflow-y-auto  bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600 md:flex  md:flex-row">
+              <div className="h-full overflow-y-auto rounded  bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600 md:flex  md:flex-row">
                 <div className=" items-start md:flex md:w-2/3 md:flex-col">
-                  <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
+                  <h2 className="text-lg font-bold text-black underline decoration-inherit dark:text-white lg:text-4xl">
                     CryptoTracker Pro
                   </h2>
-                  <p className="text-base text-gray-700 dark:text-white 2xl:text-lg">
+                  <p className=" my-2 text-base text-black dark:text-white md:my-4 md:text-lg lg:text-2xl">
                     First mobile APP created with React Native. It utilizes
                     Messari.io API to get updated cryptocurrency data and
                     displays it in a responsive and user-friendly way. The user
@@ -213,9 +213,9 @@ function CarouselComp() {
                     href="https://github.com/gzucca/challenge-cripto-react-native"
                     target="_blank"
                     rel="noreferrer"
-                    className=" my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700 md:self-start 2xl:my-6"
+                    className="mr-2 inline-flex items-center justify-center gap-2 self-start rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:text-xl lg:text-2xl md:mb-2"
                   >
-                    <BsGithub className="cursor-pointer text-xs text-white" />
+                    <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                     Go to repo
                   </a>
                 </div>
@@ -231,11 +231,11 @@ function CarouselComp() {
             </div>
 
             <div className="h-5/6 max-w-[80%]  snap-center overflow-y-hidden ">
-              <div className="h-full rounded overflow-y-auto bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
-                <h2 className="mb-2 text-lg font-bold text-black underline decoration-inherit dark:text-white">
+              <div className="h-full overflow-y-auto rounded bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">
+                <h2 className="text-lg font-bold text-black underline decoration-inherit dark:text-white lg:text-4xl">
                   Star Wars Microservices
                 </h2>
-                <p className="text-base text-gray-700 dark:text-white 2xl:text-lg">
+                <p className=" my-2 text-base text-black dark:text-white md:my-4 md:text-lg lg:text-2xl">
                   A project built with Vue.js and Express.js as part of a course
                   on microservices architecture. This means each service in the
                   backend is independently deployed, which enables the delivery
@@ -248,7 +248,7 @@ function CarouselComp() {
                   E2 VM instance.
                 </p>
                 <button
-                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:text-xl lg:text-2xl md:mb-2"
                   onClick={handleOpenLink(
                     "https://star-wars-microservices-client.vercel.app/"
                   )}
@@ -259,21 +259,21 @@ function CarouselComp() {
                   href="https://github.com/gzucca/star-wars-microservices-client"
                   target="_blank"
                   rel="noreferrer"
-                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:text-xl lg:text-2xl md:mb-2"
                 >
-                  <BsGithub className="cursor-pointer text-xs text-white" />
+                  <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo Client
                 </a>
                 <a
                   href="https://github.com/gzucca/star_wars_microservices"
                   target="_blank"
                   rel="noreferrer"
-                  className="mx-2 my-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-3 py-2 text-base font-bold text-white hover:bg-blue-700"
+                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:text-xl lg:text-2xl md:mb-2"
                 >
-                  <BsGithub className="cursor-pointer text-xs text-white" />
+                  <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo Backend
                 </a>
-                <div className="flex max-h-[60%] min-h-[25%] flex-wrap justify-center overflow-y-auto max-sm:hidden">
+                <div className="flex max-h-[60%] min-h-[25%] flex-wrap justify-center items-center overflow-y-auto max-sm:hidden">
                   {images3.map((src, index) => (
                     <img
                       src={src}

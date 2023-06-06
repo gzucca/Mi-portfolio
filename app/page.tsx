@@ -128,16 +128,16 @@ export default function Page() {
         className="mx-auto flex min-h-screen w-11/12 flex-col items-center justify-center pt-12"
       >
         <div className="h-full w-full">
-          <h1 className="mb-2 text-center text-4xl text-gray-800 dark:text-white md:hidden">
+          <h1 className="mb-2 text-center text-4xl text-gray-800 dark:text-white lg:hidden">
             Gonzalo Zucca
           </h1>
-          <h2 className="text-center text-2xl text-black dark:text-gray-300 md:hidden">
+          <h2 className="text-center text-2xl text-black dark:text-gray-300 lg:hidden">
             Full-Stack Developer
           </h2>
 
           <div className="flex  h-[80%] w-full flex-col items-center gap-4 md:gap-10 lg:flex-row 2xl:gap-16">
             <div className="relative mt-4 h-1/3 w-full md:h-1/2 md:w-1/3 lg:h-full lg:w-1/2 ">
-              <div className="relative mx-auto my-auto hidden min-h-[70vh] w-auto overflow-hidden shadow-lg dark:shadow-slate-600 md:block ">
+              <div className="relative mx-auto my-auto hidden min-h-[70vh] w-auto overflow-hidden shadow-lg dark:shadow-slate-600 lg:block ">
                 <Image
                   priority
                   src={photo}
@@ -147,7 +147,7 @@ export default function Page() {
                   sizes="50vw"
                 />
               </div>
-              <div className="relative mx-auto my-auto h-32  w-[33vw] min-w-[120px] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:hidden ">
+              <div className="relative mx-auto my-auto h-32 md:h-64  w-[33vw] min-w-[120px] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 lg:hidden ">
                 <Image
                   priority
                   src={photoMobile}
@@ -160,15 +160,15 @@ export default function Page() {
             </div>
             <div className="mx-auto my-auto  flex h-2/3 w-11/12 flex-col items-center justify-center gap-4  md:h-1/2 md:gap-8 lg:h-full lg:w-2/3 ">
               <div>
-                <h1 className="mb-4 hidden text-6xl text-gray-800 dark:text-white max-sm:text-4xl md:block">
+                <h1 className="mb-4 hidden text-6xl text-gray-800 dark:text-white max-sm:text-4xl lg:block">
                   Gonzalo Zucca
                 </h1>
-                <h2 className="hidden text-center text-2xl text-black dark:text-gray-400 md:block 2xl:text-3xl ">
+                <h2 className="hidden text-center text-2xl text-black dark:text-gray-400 lg:block 2xl:text-3xl ">
                   Full-Stack Developer
                 </h2>
               </div>
 
-              <p className=" text-justify text-sm text-gray-800 dark:text-white md:text-xl 2xl:text-3xl">
+              <p className=" text-justify text-sm text-gray-800 dark:text-white md:text-xl 3xl:text-3xl">
                 I&lsquo;m Gonzalo Zucca, a Marketing graduate with a degree in
                 the English Language from &ldquo;Universidad del Salvador&ldquo;
                 in Argentina. My whole life I have been a tech and programming
@@ -360,7 +360,7 @@ export default function Page() {
           </div>
 
           <div className=" py-8">
-            <p className="px-4 text-justify text-base text-gray-800 dark:text-white md:text-lg xl:text-3xl">
+            <p className="px-4 text-justify text-base text-gray-800 dark:text-white md:text-2xl 3xl:text-3xl">
               I&apos;m currently looking for full-time Frontend or Full-Stack
               opportunities! If you know of any positions available, if you have
               any questions, or if you just want to say hi, please feel free to

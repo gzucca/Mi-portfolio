@@ -14,8 +14,12 @@ module.exports = {
         explora: "var(--explora-font)",
         comfortaa: "var(--comfortaa-font)",
       },
+      screens: {
+        '3xl': '1640px',
+      }
     },
   },
+
   plugins: [
     require("tailwind-scrollbar")({ nocompatible: true }),
     require("flowbite/plugin"),

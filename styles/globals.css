@@ -45,7 +45,7 @@ html {
 
 .spikes {
   position: relative;
-  background: rgb(25, 25, 26);
+  background: rgb(25, 25, 25);
   height: 50vh;
 }
 
@@ -58,14 +58,39 @@ html {
   z-index: 10;
   display: block;
   height: 55px;
-  background-size: 55px 100%;
+  background-size: 40px 100%;
   background-image: linear-gradient(
       135deg,
-      rgb(25, 25, 25) 25%,
-      transparent 25%
+      rgb(25, 25, 25) 30%,
+      transparent 30%
     ),
-    linear-gradient(225deg, rgb(25, 25, 25) 25%, transparent 25%);
+    linear-gradient(225deg, rgb(25, 25, 25) 30%, transparent 30%);
   background-position: 0 0;
+}
+
+.skewed {
+  position: absolute;
+  width: 100%;
+  height: 8%;
+  background: rgb(25, 25, 25);
+  z-index: 0;
+  transform: skewY(1.5deg);
+  transform-origin: top right;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  background: rgb(25, 25, 25);
+  z-index: 0;
+  transform-origin: top right;
+}
+
+@media screen and (min-width: 768px) {
+  .spikes::after {
+    background-size: 56px 100%;
+  }
 }
 
 @keyframes wave-animation {

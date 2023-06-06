@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
               rel="noreferrer"
               title="LinkedIn"
             >
-              <BsLinkedin className="cursor-pointer text-2xl text-black dark:text-white md:text-3xl 2xl:text-4xl" />
+              <BsLinkedin className="cursor-pointer text-2xl text-black dark:text-white md:text-3xl 3xl:text-4xl" />
             </a>
           </li>
 
@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
               target="_blank"
               title="GitHub"
             >
-              <BsGithub className="cursor-pointer text-2xl text-black dark:text-white md:text-3xl 2xl:text-4xl" />
+              <BsGithub className="cursor-pointer text-2xl text-black dark:text-white md:text-3xl 3xl:text-4xl" />
             </a>
           </li>
         </ul>
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
 
           <li>
             <a
-              className="rounded  bg-gradient-to-r  from-cyan-800 to-cyan-700 px-4 py-2 text-lg text-white  md:text-2xl "
+              className="rounded  bg-gradient-to-r  from-cyan-800 to-cyan-700 px-4 py-2 text-lg text-white  md:text-xl "
               href="https://drive.google.com/file/d/1lqPM_Bl86Kb0fsAyYzNnHzHKOjQFbY3x/view?usp=sharing"
               target="_blank"
               rel="noreferrer"

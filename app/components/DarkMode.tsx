@@ -21,12 +21,12 @@ const ThemeSwitch = () => {
   return theme === "dark" ? (
     <BsFillMoonStarsFill
       onClick={() => setTheme("light")}
-      className="cursor-pointer text-2xl md:text-3xl 2xl:text-4xl text-white"
+      className="cursor-pointer text-2xl md:text-3xl 3xl:text-4xl text-white"
     />
   ) : (
     <BsSun
       onClick={() => setTheme("dark")}
-      className="cursor-pointer text-2xl md:text-3xl 2xl:text-4xl text-black"
+      className="cursor-pointer text-2xl md:text-3xl 3xl:text-4xl text-black"
     />
   );
 };

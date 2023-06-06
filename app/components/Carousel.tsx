@@ -80,7 +80,7 @@ function CarouselComp() {
                   within the website.
                 </p>
                 <button
-                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
+                  className="mr-2 mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                   onClick={handleOpenLink(
                     "https://pi-api-food.up.railway.app/"
                   )}
@@ -91,7 +91,7 @@ function CarouselComp() {
                   href="https://github.com/gzucca/PI-API-Food"
                   target="_blank"
                   rel="noreferrer"
-                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
+                  className="mr-2 mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                 >
                   <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo
@@ -148,7 +148,7 @@ function CarouselComp() {
                   catalog is also manageable from the dashboard in the website.
                 </p>
                 <button
-                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
+                  className="mr-2 mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                   onClick={handleOpenLink("https://scaneame.vercel.app/")}
                 >
                   View project
@@ -157,7 +157,7 @@ function CarouselComp() {
                   href="https://github.com/odalviarez/scaneaMe"
                   target="_blank"
                   rel="noreferrer"
-                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
+                  className="mr-2 mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                 >
                   <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo
@@ -213,7 +213,7 @@ function CarouselComp() {
                     href="https://github.com/gzucca/challenge-cripto-react-native"
                     target="_blank"
                     rel="noreferrer"
-                    className="mr-2 inline-flex items-center justify-center gap-2 self-start rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
+                    className="mr-2 mb-2 inline-flex items-center justify-center gap-2 self-start rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                   >
                     <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                     Go to repo
@@ -248,7 +248,7 @@ function CarouselComp() {
                   E2 VM instance.
                 </p>
                 <button
-                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
+                  className="mr-2 mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                   onClick={handleOpenLink(
                     "https://star-wars-microservices-client.vercel.app/"
                   )}
@@ -259,7 +259,7 @@ function CarouselComp() {
                   href="https://github.com/gzucca/star-wars-microservices-client"
                   target="_blank"
                   rel="noreferrer"
-                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
+                  className="mr-2 mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                 >
                   <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo Client
@@ -268,7 +268,7 @@ function CarouselComp() {
                   href="https://github.com/gzucca/star_wars_microservices"
                   target="_blank"
                   rel="noreferrer"
-                  className="mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
+                  className="mr-2 mb-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                 >
                   <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo Backend

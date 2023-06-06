@@ -4,9 +4,9 @@ import ThemeSwitch from "./DarkMode";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="sticky top-0 z-[100] block w-full  bg-white py-3 shadow-lg dark:bg-black ">
+    <div className="sticky top-0 z-[100] block w-full px-4  bg-white py-4 shadow-lg dark:bg-black ">
       <nav>
-        <div className="container mx-auto flex w-8/12 flex-row justify-between">
+        <div className="container mx-auto flex flex-row justify-between">
           <ul className="flex items-center justify-between gap-4">
             <li>
               <a
@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
                 rel="noreferrer"
                 title="LinkedIn"
               >
-                <BsLinkedin className="cursor-pointer text-3xl text-black dark:text-white" />
+                <BsLinkedin className="cursor-pointer text-2xl md:text-3xl 2xl:text-4xl text-black dark:text-white" />
               </a>
             </li>
 
@@ -26,17 +26,17 @@ const Navbar: React.FC = () => {
                 target="_blank"
                 title="GitHub"
               >
-                <BsGithub className="cursor-pointer text-3xl text-black dark:text-white" />
+                <BsGithub className="cursor-pointer text-2xl md:text-3xl 2xl:text-4xl text-black dark:text-white" />
               </a>
             </li>
           </ul>
 
-          <ul className="flex items-center justify-between gap-4">
+          <ul className="flex items-center text-white dark:text-dark justify-between gap-4">
             <li>{<ThemeSwitch /> ? <ThemeSwitch /> : null}</li>
 
             <li>
               <a
-                className="rounded  bg-gradient-to-r  from-cyan-800 to-cyan-700 px-4 py-2 text-white "
+                className="rounded  bg-gradient-to-r  from-cyan-800 to-cyan-700 px-4 py-2 text-lg md:text-2xl  text-white "
                 href="https://drive.google.com/file/d/1lqPM_Bl86Kb0fsAyYzNnHzHKOjQFbY3x/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"

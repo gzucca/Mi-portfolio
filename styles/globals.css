@@ -2,11 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
-.Typewriter, .Typewriter__cursor {
+.Typewriter,
+.Typewriter__cursor {
   font-size: 50px;
   color: white;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
 .wave {
   animation-name: wave-animation;
@@ -37,7 +59,11 @@
   display: block;
   height: 55px;
   background-size: 55px 100%;
-  background-image: linear-gradient(135deg, rgb(25, 25, 25) 25%, transparent 25%),
+  background-image: linear-gradient(
+      135deg,
+      rgb(25, 25, 25) 25%,
+      transparent 25%
+    ),
     linear-gradient(225deg, rgb(25, 25, 25) 25%, transparent 25%);
   background-position: 0 0;
 }

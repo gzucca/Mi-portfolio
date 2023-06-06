@@ -168,7 +168,7 @@ export default function Page() {
                 </h2>
               </div>
 
-              <p className=" text-justify text-sm text-gray-800 dark:text-white md:text-xl lg:text-2xl">
+              <p className=" text-justify text-sm text-gray-800 dark:text-white md:text-xl 2xl:text-3xl">
                 I&lsquo;m Gonzalo Zucca, a Marketing graduate with a degree in
                 the English Language from &ldquo;Universidad del Salvador&ldquo;
                 in Argentina. My whole life I have been a tech and programming
@@ -204,9 +204,9 @@ export default function Page() {
       {/* My Tools */}
       <section
         id="myTools"
-        className="container mx-auto flex h-[60vh] flex-col justify-center md:h-auto "
+        className="container mx-auto flex h-[60vh] flex-col justify-center md:mb-24 md:h-auto "
       >
-        <div className="flex h-full w-full flex-col justify-around">
+        <div className="px-2 flex h-full w-full flex-col justify-around">
           <h1 className="text-center text-6xl text-gray-800 dark:text-white max-sm:text-4xl">
             My tools
           </h1>
@@ -350,7 +350,7 @@ export default function Page() {
       {/* Contact Me */}
       <section
         id="contactMe"
-        className="container mx-auto flex min-h-[70vh] flex-col items-center justify-center md:min-h-[50vh]"
+        className="container mx-auto flex  h-[60vh] flex-col items-center justify-center md:mb-24 md:h-auto"
       >
         <div className="mx-auto my-4 flex flex-col items-center justify-center sm:w-full md:w-10/12 lg:w-8/12">
           <div className="mx-auto w-full text-center">
@@ -359,8 +359,8 @@ export default function Page() {
             </h2>
           </div>
 
-          <div className="w-11/12 py-8">
-            <p className=" text-base text-justify text-gray-800 dark:text-white md:text-lg lg:text-2xl">
+          <div className=" py-8">
+            <p className="px-4 text-justify text-base text-gray-800 dark:text-white md:text-lg xl:text-3xl">
               I&apos;m currently looking for full-time Frontend or Full-Stack
               opportunities! If you know of any positions available, if you have
               any questions, or if you just want to say hi, please feel free to

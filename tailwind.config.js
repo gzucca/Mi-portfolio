@@ -1,6 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const settingsScreens = require("./tailwind.settings.screens");
-const settingsFontSizes = require("./tailwind.settings.fontSizes");
 
 module.exports = {
   darkMode: "class",
@@ -17,8 +15,6 @@ module.exports = {
         comfortaa: "var(--comfortaa-font)",
       },
     },
-    screens: settingsScreens,
-    fontSize: settingsFontSizes,
   },
   plugins: [
     require("tailwind-scrollbar")({ nocompatible: true }),

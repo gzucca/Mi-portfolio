@@ -61,7 +61,7 @@ function CarouselComp() {
             indicators={false}
             leftControl="<"
             rightControl=">"
-            className="mx-auto h-screen w-screen place-content-center text-2xl text-black dark:text-white lg:text-5xl"
+            className="mx-auto h-screen w-screen place-content-center text-2xl text-white lg:text-5xl"
           >
             <div className="h-5/6 max-w-[80%]  snap-center overflow-y-hidden ">
               <div className="h-full overflow-y-auto rounded bg-slate-400 p-6 font-normal shadow-lg dark:bg-gray-400 dark:shadow-slate-600">

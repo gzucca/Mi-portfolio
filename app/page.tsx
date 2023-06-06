@@ -63,7 +63,7 @@ export default function Page() {
                 onInit={(typewriter: any) => {
                   typewriter
                     .typeString(
-                      "<span style='color: rgb(147, 62, 62);'>Hi!</span> I'm Gonzalo <span class='wave'>👋</span>"
+                      "<span style='color: rgb(215, 88, 88);'>Hi!</span> I'm Gonzalo <span class='wave'>👋</span>"
                     )
                     .start();
                 }}

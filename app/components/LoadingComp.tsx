@@ -2,7 +2,7 @@
 
 function Loading() {
   return (
-    <div className="mt-3 flex h-screen w-full snap-center flex-row items-center justify-around">
+    <div className="mt-3 bg-[#191919] flex h-screen w-full snap-center flex-row items-center justify-around">
       <div role="status">
         <svg
           aria-hidden="true"

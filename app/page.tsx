@@ -52,8 +52,8 @@ export default function Page() {
           id="Landing"
           className="black mx-auto bg-[#191919] flex min-h-[90vh] w-full flex-row items-center justify-around"
         >
-          <div className="flex w-full flex-row items-center justify-center max-md:flex-col md:gap-4">
-            <div className="flex w-6/12 flex-col items-center justify-center overflow-hidden max-md:w-full md:gap-8">
+          <div className="flex w-full flex-col items-center justify-center lg:flex-row md:gap-4">
+            <div className="flex w-8/12 flex-col items-center justify-center overflow-hidden max-md:w-full md:gap-8">
               <Typewriter
                 options={{
                   delay: 75,
@@ -126,7 +126,7 @@ export default function Page() {
       {/* About me */}
       <section
         id="aboutMe"
-        className="mx-auto flex min-h-screen w-11/12 flex-col items-center justify-center pt-24 md:pt-12 lg:h-[105vmax] lg:w-full 2xl:h-[80vh]"
+        className="mx-auto flex min-h-screen w-11/12 flex-col items-center justify-center pt-24 md:pt-12 lg:h-[960px] lg:w-full 2xl:h-[80vh]"
       >
         <div className="h-full w-full">
           <h1 className="mb-2 text-center text-4xl text-gray-800 dark:text-white lg:hidden">
@@ -145,7 +145,7 @@ export default function Page() {
                   alt="photo"
                   fill={true}
                   style={{ objectFit: "cover" }}
-                  sizes="50vw"
+                  sizes="100vw"
                 />
               </div>
               <div className="relative mx-auto my-auto h-36 w-[36vw] min-w-[120px] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:h-72 lg:hidden ">

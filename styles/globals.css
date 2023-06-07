@@ -43,37 +43,12 @@ html {
   animation-delay: 0.5s;
 }
 
-.spikes {
-  position: relative;
-  background: rgb(25, 25, 25);
-  height: 50vh;
-}
-
-.spikes::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: -0%;
-  top: 100%;
-  z-index: 10;
-  display: block;
-  height: 55px;
-  background-size: 40px 100%;
-  background-image: linear-gradient(
-      135deg,
-      rgb(25, 25, 25) 30%,
-      transparent 30%
-    ),
-    linear-gradient(225deg, rgb(25, 25, 25) 30%, transparent 30%);
-  background-position: 0 0;
-}
-
 .skewed {
   position: absolute;
   width: 100%;
   height: 8%;
   background: rgb(25, 25, 25);
-  z-index: 0;
+  z-index: 10;
   transform: skewY(1.5deg);
   transform-origin: top right;
 }

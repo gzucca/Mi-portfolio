@@ -50,7 +50,7 @@ export default function Page() {
       {playAnimation ? (
         <section
           id="Landing"
-          className="spikes mx-auto flex min-h-[90vh] w-full flex-row items-center justify-around"
+          className="black mx-auto bg-[#191919] flex min-h-[90vh] w-full flex-row items-center justify-around"
         >
           <div className="flex w-full flex-row items-center justify-center max-md:flex-col md:gap-4">
             <div className="flex w-6/12 flex-col items-center justify-center overflow-hidden max-md:w-full md:gap-8">
@@ -122,10 +122,11 @@ export default function Page() {
         <Loading />
       )}
 
+<div className="skewed"></div>
       {/* About me */}
       <section
         id="aboutMe"
-        className="mx-auto flex min-h-screen w-11/12 flex-col items-center justify-center pt-12 lg:h-[80vh] lg:w-full"
+        className="mx-auto flex min-h-screen w-11/12 flex-col items-center justify-center pt-12 lg:h-[105vmax] lg:w-full 2xl:h-[80vh]"
       >
         <div className="h-full w-full">
           <h1 className="mb-2 text-center text-4xl text-gray-800 dark:text-white lg:hidden">
@@ -158,7 +159,7 @@ export default function Page() {
                 />
               </div>
             </div>
-            <div className="mx-auto mb-16  flex h-2/3 w-11/12 flex-col items-center justify-center gap-4  md:h-1/2 md:gap-8 lg:h-full lg:w-2/3 ">
+            <div className="mx-auto mb-16 z-20 flex h-2/3 w-11/12 flex-col items-center justify-center gap-4  md:h-1/2 md:gap-8 lg:h-full lg:w-2/3 ">
               <div>
                 <h1 className="mb-4 hidden text-6xl text-gray-800 dark:text-white max-sm:text-4xl lg:block">
                   Gonzalo Zucca

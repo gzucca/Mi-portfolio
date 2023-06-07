@@ -126,7 +126,7 @@ export default function Page() {
       {/* About me */}
       <section
         id="aboutMe"
-        className="mx-auto flex min-h-screen w-11/12 flex-col items-center justify-center pt-12 lg:h-[105vmax] lg:w-full 2xl:h-[80vh]"
+        className="mx-auto flex min-h-screen w-11/12 flex-col items-center justify-center pt-24 md:pt-12 lg:h-[105vmax] lg:w-full 2xl:h-[80vh]"
       >
         <div className="h-full w-full">
           <h1 className="mb-2 text-center text-4xl text-gray-800 dark:text-white lg:hidden">

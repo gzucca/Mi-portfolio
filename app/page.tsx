@@ -135,7 +135,7 @@ export default function Page() {
             Full-Stack Developer
           </h2>
 
-          <div className="flex h-[80%] w-full flex-col items-center gap-4 md:gap-10 lg:h-full lg:flex-row lg:gap-0 ">
+          <div className="flex h-[80%] w-full flex-col items-center  lg:h-full lg:flex-row lg:gap-0 ">
             <div className="relative mt-4 h-1/3 w-full md:h-1/2 md:w-1/3 lg:h-full lg:w-1/2 ">
               <div className="relative -top-14 mx-auto my-auto hidden h-[105%] min-h-[70vh] w-auto overflow-hidden dark:shadow-slate-600 lg:block ">
                 <Image
@@ -147,14 +147,14 @@ export default function Page() {
                   sizes="50vw"
                 />
               </div>
-              <div className="relative mx-auto my-auto h-32 w-[33vw]  min-w-[120px] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:h-64 lg:hidden ">
+              <div className="relative mx-auto my-auto h-36 w-[36vw] min-w-[120px] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:h-72 lg:hidden ">
                 <Image
                   priority
                   src={photoMobile}
                   alt="photo"
                   fill={true}
                   style={{ objectFit: "cover" }}
-                  sizes="90vw"
+                  sizes="50vw"
                 />
               </div>
             </div>
@@ -178,8 +178,8 @@ export default function Page() {
                 <br />
                 In &ldquo;Soy Henry&ldquo; Coding Bootcamp I learned the
                 fundamentals of web programming including languages, data
-                structures and algorithms, frameworks, markup languages, Agile
-                methodologies, and much more. Since finishing the bootcamp
+                structures and algorithms, frameworks, Agile methodologies,
+                markup languages, and much more. Since finishing the bootcamp
                 I&lsquo;ve been working in different proyects and studyng
                 non-stop new technologies in the field, good practices, other
                 languages, and stacks. I have started my AWS certification on

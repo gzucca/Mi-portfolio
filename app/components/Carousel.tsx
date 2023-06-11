@@ -19,13 +19,16 @@ function CarouselComp() {
     "https://i.ibb.co/9YJ0w8m/scan-7.jpg",
   ];
   const images2 = [
-    "https://i.ibb.co/8YWJCfn/food1.jpg",
-    "https://i.ibb.co/1nDPQ73/food2.jpg",
-    "https://i.ibb.co/Cz6QP1W/food3.jpg",
-    "https://i.ibb.co/D5Tsy8H/food4.jpg",
+    "https://i.ibb.co/rZ1hxSX/food-1.jpg",
+    "https://i.ibb.co/8mj81Xd/food-2.jpg",
+    "https://i.ibb.co/596S5S9/food-3.jpg",
+    "https://i.ibb.co/cyMn3nL/food-4.jpg",
+    "https://i.ibb.co/YkY2s1V/food-5.jpg",
+    "https://i.ibb.co/NNwWRZB/food-6.jpg",
   ];
   const images3 = [
     "https://i.ibb.co/FsjPj7p/Screenshot-star-wars-api.jpg",
+    "https://i.ibb.co/T8zvFLK/Screenshot-star-wars-api5.jpg",
     "https://i.ibb.co/myb1fK1/Screenshot-star-wars-api2.jpg",
     "https://i.ibb.co/NmZwstC/Screenshot-star-wars-api3.jpg",
     "https://i.ibb.co/hR2XCKM/Screenshot-star-wars-api4.jpg",
@@ -107,7 +110,7 @@ function CarouselComp() {
                   <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo Backend
                 </a>
-                <div className="flex max-h-[60%] min-h-[25%] flex-wrap items-center justify-center overflow-y-auto max-sm:hidden">
+                <div className="flex min-h-[25%] flex-wrap items-center justify-center overflow-y-auto max-sm:hidden">
                   {images3.map((src, index) => (
                     <img
                       src={src}
@@ -115,8 +118,8 @@ function CarouselComp() {
                       key={index}
                       style={{
                         margin: "4px",
-                        width: "max(250px, 15vw)",
-                        height: "auto",
+                        width: "auto",
+                        maxHeight: "140px",
                         cursor: "pointer",
                       }}
                       alt=""
@@ -210,7 +213,7 @@ function CarouselComp() {
                   <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo
                 </a>
-                <div className="flex max-h-[60%] min-h-[25%] flex-wrap justify-center overflow-y-auto max-sm:hidden">
+                <div className="flex min-h-[25%] flex-wrap items-center justify-center overflow-y-auto max-sm:hidden">
                   {images2.map((src, index) => (
                     <img
                       src={src}
@@ -219,8 +222,8 @@ function CarouselComp() {
                       key={index}
                       style={{
                         margin: "4px",
-                        width: "max(250px, 15vw)",
-                        height: "auto",
+                        width: "auto",
+                        maxHeight: "140px",
                         cursor: "pointer",
                       }}
                       alt=""
@@ -278,7 +281,7 @@ function CarouselComp() {
                   <BsGithub className=" cursor-pointer text-xs text-white md:text-sm " />
                   Go to repo
                 </a>
-                <div className="flex max-h-[60%] min-h-[25%] flex-wrap justify-center overflow-y-auto max-sm:hidden">
+                <div className="flex min-h-[25%] flex-wrap items-center justify-center overflow-y-auto max-sm:hidden">
                   {images.map((src, index) => (
                     <img
                       src={src}
@@ -286,8 +289,8 @@ function CarouselComp() {
                       key={index}
                       style={{
                         margin: "4px",
-                        width: "max(250px, 15vw)",
-                        height: "auto",
+                        width: "auto",
+                        maxHeight: "140px",
                         cursor: "pointer",
                       }}
                       alt=""

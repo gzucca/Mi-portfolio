@@ -84,14 +84,14 @@ function CarouselComp() {
                   accordingly. The backend is hosted in a Google Cloud Computing
                   E2 VM instance.
                 </p>
-                <button
+                <a
                   className="mb-2 mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
-                  onClick={handleOpenLink(
-                    "https://star-wars-microservices-client.vercel.app/"
-                  )}
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://star-wars-microservices-client.vercel.app/"
                 >
                   View project
-                </button>
+                </a>
                 <a
                   href="https://github.com/gzucca/star-wars-microservices-client"
                   target="_blank"

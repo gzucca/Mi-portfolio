@@ -13,12 +13,12 @@ export default function Prompt({ openedPrompt, setOpenedPrompt }: PromptType) {
   return (
     <>
       {openedPrompt && (
-        <div className=" absolute inset-0 z-50 flex h-screen w-screen items-center justify-center bg-[rgba(0,0,0,0.80)] ">
+        <div className=" absolute z-50 flex h-screen w-screen items-center justify-center bg-[rgba(0,0,0,0.80)] ">
           <div className="w-10/12 bg-slate-800 p-10 text-white  md:w-1/2">
             <h1 className="text-center text-4xl font-bold">Sorry! 👉👈</h1>
             <p className="text-base">
               Due to free-tier deployment, the project you are trying to reach
-              is NOT AVAILABLE after the 20th of each month. Please come back
+              is NOT AVAILABLE after the 26th of each month. Please come back
               next month!
             </p>
             <button

@@ -174,7 +174,7 @@ export default function Page() {
                     in the English Language from &ldquo;Universidad del
                     Salvador&ldquo; in Argentina. My whole life I have been a
                     tech and programming enthusiast, until last year when I
-                    finllay decided to enter a Full Stack Development Bootcamp
+                    finally decided to enter a Full Stack Development Bootcamp
                     and found my true passion.
                     <br />
                     <br />
@@ -182,8 +182,8 @@ export default function Page() {
                     fundamentals of web programming including languages, data
                     structures and algorithms, frameworks, Agile methodologies,
                     markup languages, and much more. Since finishing the
-                    bootcamp I&lsquo;ve been working in different proyects and
-                    studyng non-stop new technologies in the field, good
+                    bootcamp I&lsquo;ve been working in different projects and
+                    studying non-stop new technologies in the field, good
                     practices, other languages, and stacks. I have started my
                     AWS certification on cloud computing services, and learned
                     containerization technologies with Docker.

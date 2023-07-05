@@ -182,7 +182,7 @@ export default function Page() {
                     fundamentals of web programming including languages, data
                     structures and algorithms, frameworks, Agile methodologies,
                     markup languages, and much more. Since finishing the
-                    bootcamp I&lsquo;ve been working in different projects and
+                    bootcamp I&lsquo;ve been working on different projects and
                     studying non-stop new technologies in the field, good
                     practices, other languages, and stacks. I have started my
                     AWS certification on cloud computing services, and learned

@@ -84,14 +84,14 @@ function CarouselComp() {
                   accordingly. The backend is hosted in a Google Cloud Computing
                   E2 VM instance.
                 </p>
-                <a
+                {/* <a
                   className="mb-2 mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                   target="_blank"
                   rel="noreferrer"
                   href="https://star-wars-microservices-client.vercel.app/"
                 >
                   View project
-                </a>
+                </a> */}
                 <a
                   href="https://github.com/gzucca/star-wars-microservices-client"
                   target="_blank"
@@ -196,14 +196,14 @@ function CarouselComp() {
                   PostgreSQL. New recipes can be added to the database from
                   within the website.
                 </p>
-                <button
-                  className="mb-2 mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
-                  onClick={handleOpenLink(
-                    "https://pi-api-food.up.railway.app/"
-                  )}
-                >
-                  View project
-                </button>
+                  {/* <button
+                    className="mb-2 mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
+                    onClick={handleOpenLink(
+                      "https://pi-api-food.up.railway.app/"
+                    )}
+                  >
+                    View project
+                  </button> */}
                 <a
                   href="https://github.com/gzucca/PI-API-Food"
                   target="_blank"
@@ -266,12 +266,12 @@ function CarouselComp() {
                   page also has a database built with MongoDB, and its product
                   catalog is also manageable from the dashboard in the website.
                 </p>
-                <button
+                {/* <button
                   className="mb-2 mr-2 inline-flex items-center justify-center gap-2 self-center rounded-full bg-blue-500 px-[.7em] py-[.5em] text-base font-bold text-white hover:bg-blue-700 md:mb-2 md:text-xl 3xl:text-2xl"
                   onClick={handleOpenLink("https://scaneame.vercel.app/")}
                 >
                   View project
-                </button>
+                </button> */}
                 <a
                   href="https://github.com/odalviarez/scaneaMe"
                   target="_blank"

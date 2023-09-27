@@ -1,7 +1,11 @@
 import "../styles/globals.css";
 import Navbar from "./components/Navbar";
-import Providers from "./Providers";
 import { Explora, Comfortaa } from "next/font/google";
+import dynamic from "next/dynamic"
+const Providers = dynamic(
+  () => import("./Providers"),
+  { ssr: false }
+)
 
 const explora = Explora({
   variable: "--explora-font",

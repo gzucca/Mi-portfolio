@@ -19,7 +19,6 @@ import tailwind from "../public/icons/tailwind.png";
 import docker from "../public/icons/docker.webp";
 import CarouselComp from "./components/Carousel";
 import Typewriter from "typewriter-effect";
-import { Fade } from "react-awesome-reveal";
 import GraphemeSplitter from "grapheme-splitter";
 import Loading from "./components/LoadingComp";
 import { useEffect, useState } from "react";
@@ -49,7 +48,6 @@ export default function Page() {
       {/* Landing */}
       {playAnimation ? (
         <main className="overflow-x-hidden scrollbar-thin scrollbar-track-slate-300 scrollbar-thumb-gray-900 dark:bg-slate-900 dark:scrollbar-track-blue-900 ">
-          
           {/* Landing */}
           <section
             id="Landing"
@@ -71,12 +69,11 @@ export default function Page() {
                       .start();
                   }}
                 />
-                <Fade
-                  direction="left"
-                  triggerOnce={true}
-                  className=" relative my-4 w-full opacity-0 max-md:w-full md:left-[12rem] 2xl:left-[14rem]"
+                <div
+                
+                  className=" relative my-4 w-full opacity-100 max-md:w-full md:left-[12rem] 2xl:left-[14rem]"
                 >
-                  <nav className="flex flex-col items-center justify-center text-end text-3xl text-slate-400 dark:text-slate-500 md:text-4xl">
+                  <nav className="flex flex-col items-center justify-center text-end text-3xl text-slate-400 opacity-100 dark:text-slate-500 md:text-4xl">
                     <div className="duration-200 hover:ease-in md:relative md:right-[42rem] md:w-[64rem] md:hover:right-[40rem]">
                       <div className="border-b-2 hover:text-white">
                         <a href="#aboutMe">About Me</a>
@@ -102,13 +99,12 @@ export default function Page() {
                       <div className="h-8 border-r-2 "></div>
                     </div>
                   </nav>
-                </Fade>
+                </div>
               </div>
 
-              <Fade
-                direction="right"
-                triggerOnce={true}
-                className="h-6/12 max-md:h-7/12 my-4 w-6/12 overflow-hidden rounded-full opacity-0 max-md:w-7/12"
+              <div
+  
+                className="h-6/12 max-md:h-7/12 my-4 w-6/12 overflow-hidden rounded-full  max-md:w-7/12"
               >
                 <div>
                   <Image
@@ -118,7 +114,7 @@ export default function Page() {
                     className="object-cover"
                   />
                 </div>
-              </Fade>
+              </div>
             </div>
           </section>
 
@@ -145,7 +141,7 @@ export default function Page() {
                       alt="photo"
                       fill={true}
                       style={{ objectFit: "cover" }}
-                      sizes="100vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
                   <div className="relative mx-auto my-auto h-36 w-[36vw] min-w-[120px] overflow-hidden rounded-full border-4 shadow-lg dark:shadow-slate-600 md:h-72 lg:hidden ">
@@ -155,7 +151,7 @@ export default function Page() {
                       alt="photo"
                       fill={true}
                       style={{ objectFit: "cover" }}
-                      sizes="50vw"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                   </div>
                 </div>

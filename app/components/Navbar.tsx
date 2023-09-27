@@ -1,6 +1,10 @@
 import React from "react";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
-import ThemeSwitch from "./DarkMode";
+import dynamic from "next/dynamic"
+const ThemeSwitch = dynamic(
+  () => import("./DarkMode"),
+  { ssr: false }
+)
 
 const Navbar: React.FC = () => {
   return (

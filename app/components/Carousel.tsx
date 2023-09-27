@@ -1,10 +1,10 @@
 "use client";
-import { Carousel } from "flowbite-react";
+import { Carousel } from 'flowbite-react';
 import React, { useState, useCallback } from "react";
 import ImageViewer from "react-simple-image-viewer";
 import { BsGithub } from "react-icons/bs";
 import Prompt from "./Prompt";
-import { getCurrentDate } from "../../hour";
+// import { getCurrentDate } from "../../hour";
 
 function CarouselComp() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -36,14 +36,14 @@ function CarouselComp() {
 
   const [openedPrompt, setOpenedPrompt] = useState(false);
 
-  const handleOpenLink = (url: string) => {
-    const check = getCurrentDate();
-    if (check) {
-      return () => setOpenedPrompt(true);
-    } else {
-      return () => window.open(url, "_blank");
-    }
-  };
+  // const handleOpenLink = (url: string) => {
+  //   const check = getCurrentDate();
+  //   if (check) {
+  //     return () => setOpenedPrompt(true);
+  //   } else {
+  //     return () => window.open(url, "_blank");
+  //   }
+  // };
 
   const openImageViewer = useCallback((index: number) => {
     setCurrentImage(index);
